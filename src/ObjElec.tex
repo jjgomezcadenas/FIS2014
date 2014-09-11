@@ -1,4 +1,7 @@
-% Los objetivos específicos de cada uno de los subproyectos participantes, enumerándolos brevemente, con claridad, precisión y de manera realista (acorde con la duración prevista del proyecto).%% En los subproyectos con dos investigadores principales, deberá indicarse expresamente de qué objetivos específicos se hará responsable cada uno de ellos.%
+% Los objetivos específicos de cada uno de los subproyectos participantes, enumerándolos brevemente, con claridad, precisión y de manera realista (acorde con la duración prevista del proyecto).
+%
+% En los subproyectos con dos investigadores principales, deberá indicarse expresamente de qué objetivos específicos se hará responsable cada uno de ellos.
+%
 
 \subsubsection*{Objectives of the ENG subproject}
 
@@ -14,4 +17,68 @@ The specific objectives of this sub-project (also called NEXT projects or NP) ar
 \item {\bf Online}: Design and commissioning of the online monitoring for NEW. Interfaces with offline, DAQ and Slow Control. The project leader is 
 informatics engineer Toni Mar\'i.
 \end{enumerate}
+%\subsubsection*{FE readout electronics for the PMTs}
+%
+%The FE electronics for the PMTs in NEXT-100 will be very similar to the one developed for the NEXT-DEMO
+%and NEXT-DBDM prototypes. The first step is to shape and filter the fast signals produced by the PMTs (less than 5 ns wide) to match the digitizer and eliminate the high frequency noise. 
+%An integrator is implemented by simply adding a capacitor and a resistor to the PMT base. The charge integration capacitor shunting the anode lengthens the pulse and reduces the primary signal peak voltage accordingly.
+%The integrating signal is then fed to a low-pass filter amplifier.  
+%
+%The DAQ module (Front-End Concentrator, FEC) has been designed as a joint effort between CERN and the NEXT collaboration in the framework of the Scalable Readout System (SRS) for the RD51 R\&D program, as described in our CDR.These two cards are edge mounted to form a standard 6U$\times$220 mm eurocard. The FEC module can interface different kinds of front-end electronics by using the appropriate plug-in card.
+%
+%\subsubsection*{FE electronics and readout for NEXT-100 tracking plane}
+%
+%%%%%%%%%%%%%%%
+%\begin{figure}[tbhp!]
+%\centering
+%\includegraphics[width=0.6\paperwidth]{img/FEnew.pdf}
+%\caption{\small This low power amplifier circuit for NEXT100 features only approx. 30 mW power, 4mV/pe gain and 1.7mV rms noise.}
+%\label{fig:figure6}
+%\end{figure}
+%%%%%%%%%%%%%%%
+%
+%The tracking planes will have $\sim$
+%7\,000 channels. Passing all those wires across feedthroughs, as it has been done
+%for NEXT-DEMO is possible but challenging and probably not optimal. Consequently we are developing a new in-vessel FE  electronics that reduces the total number of feedthroughs to an acceptable level. Here we present the new electronics readout architecture.
+%
+%Since the electronics will be inside the PV, it must necessarily be 
+%very low power to minimize the heat dissipated inside the vessel. Our  design consists of  a very simple front-end, very low power ADCs and a digital data merger stage (FPGA) to be placed inside the detector. 
+%
+%Figure \ref{fig:figure6} shows our design. It is a three-stage circuit, with a gain of 10 in each stage. The first two stages are based on the AD8012 (two amplifiers per package, very low noise) and the last one on the AD8005 (ultra low power, 400 $\mu$A quiescent current). Total gain is (Rt is the input termination resistance) $1.000\times$ Rt=50.000, as the first stage is a transimpedance amplifier with gain of $10\times $ Rt=500. A passive, 2 $\mu$s time-constant RC circuit (200 pF, 10 k$\Omega$ between the second and the third stage) acts as the circuit integrator. 
+%This gain will result in a 1V output for a 250-pe dynamic range.
+%Total electronic noise  in the amplifier circuit is very low according to the simulations: 1.7 mV rms.
+% 
+%%%%%%%%%%%%%%%
+%\begin{figure}[tbhp!]
+%\centering
+%\includegraphics[width=0.6\paperwidth]{img/FEBnew.pdf}
+%\caption{\small Functional blocks in the FEB card.}
+%\label{fig:figure8}
+%\end{figure}
+%%%%%%%%%%%%%%%
+%
+%The readout takes the input of the DBs (transmitted via low-crosstalk kapton ribbon cables) to a Front-End Board (FEB) that includes the analog stages, ADC converters, voltage regulators and an FPGA that handles, formats, buffers and transmits data to the outer DAQ. LVDS clock and trigger inputs are also needed.
+%
+%This 64-ch FEB (Figure \ref{fig:figure8}) is the key component in the  in-vessel electronics. A total of 107 FEBs are required. FEB size can be 15$\times$15 cm$^2$, leaving 3.5 cm$^2$~ board area per channel. This can easily accommodate the three amplifying stages and ADC per channel plus associated SMD passive components in one board side. The FPGA, voltage regulators and I/O connectors can sit in the opposite layer.
+%
+%
+%
+%%%%%%%%%%%%%%%
+%\begin{figure}[tbhp!]
+%\centering
+%\includegraphics[width=0.6\paperwidth]{img/DAQ.jpg}
+%\caption{\small The NEXT-100 SiPM plane can be read out with 4 LDCs and 7 FECs.}
+%\label{fig:figure9}
+%\end{figure}
+%%%%%%%%%%%%%%%
+%
+%\subsubsection*{WLS coating}
+%
+%Xenon scintillates in the VUV range, with a peak at $\sim$175 nm. On the other hand, the PDE of MPPCs peaks in the blue region and they have a very low PDE below 200 nm. Furthermore, the NEXT PMTs will be enclosed in cans coupled to the gas through sapphire windows which are very transparent to the visible light but not to UV (UV grade sapphire is extremely expensive).  Last but not least, the reflectivity of the light tube (made of TTX, a Teflon cloth) is almost 100\% in the visible spectrum and no better than 50\% in the VUV region. 
+%
+%Consequently, our strategy in NEXT is to shift the VUV light emitted by xenon to the blue region using a wavelength shifter molecule, specifically Tetraphenyl-butadiene (TPB) of $\ge99$\% purity grade. TPB  absorbs light in a wide UV range and re-emits it in the blue with an emission peak around 430~nm.  The molecule can be applied by vacuum evaporation, and other techniques from crystalline form
+%directly onto surfaces. 
+%
+%A TPB procedure to deposit a thin layer of TPC on flat (relatively small) surfaces, such as daughter boards (DBs) and the sapphire windows of the PMT cans has been developed at ICMOL and IFIC. A second procedure to coat large surfaces, such as the NEXT-100 light tube has also been developed at IFIC. 
+%
 

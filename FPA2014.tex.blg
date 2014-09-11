@@ -1,0 +1,5 @@
+[0] Config.pm:387> INFO - This is Biber 1.6
+[1] Config.pm:390> INFO - Logfile is 'FPA2014.tex.blg'
+[64] biber-darwin:218> INFO - === Mon Sep  8, 2014, 15:37:45
+[572] Utils.pm:185> ERROR - Cannot find control file 'FPA2014.tex.bcf'! - did you pass the "backend=biber" option to BibLaTeX?
+[572] Biber.pm:109> INFO - ERRORS: 1
