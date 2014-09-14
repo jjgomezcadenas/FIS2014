@@ -17,7 +17,7 @@ A similar method was already used to calibrate the PMTs of NEXT-DEMO \cite{NEXT-
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.6\textwidth]{img/CALIB_LSC_sources.jpg}
+\includegraphics[width=0.6\textwidth]{img/CALREC_LSC_sources.jpg}
 %\includegraphics{img/CALIB_LSC_sources.jpg}
 \caption{\small Drawing of the NEW detector at the LSC platform. The lead closet with the radioactive sources is on the left,  guides transmit gamas into the vessel via two ports on the side.}
 \label{fig:CALREC_LSC_sources}
@@ -31,8 +31,8 @@ From the two electrons at 1.6 MeV we can estimate the efficiency to identify a \
 In addition to the \Tl, \NA ~(511 keV) and \CS ~(662 keV)  sources will be used to calibrate the energy scale around 500 keV. 
 %The sources will be located inside a lead closet on the LSC platform outside the NEXT castle.
 %two light guides will direct the gamma rays into the vessel via two ports located on the side. 
-The sources will be located in a lead shielded closet outside the NEXT castle, a light guide will direct the gammas to the two ports (see Fig. ~\ref{fig:CALIB_LSC_sources}) on the side of the vessel. 
-Calibration will take place before the start of the run in a periodic basis.
+The sources will be located in a lead shielded closet outside the NEXT castle, a light guide will direct the gammas to the two ports on the side of the vessel  (see Fig. ~\ref{fig:CALIB_LSC_sources}). 
+%Calibration will take place before the start of the run in a periodic basis.
 %The detector will be calibrated before we the start of the run and periodically.
 %The Calibration procedure itself (security measures,
 We are still defining the procedure for the calibration runs (security, time, periodicity and type). This calibration method has been previously used in other \bb experiments (see \cite{COURE-Tl}). We expect no difficulties. 
@@ -41,7 +41,7 @@ We are still defining the procedure for the calibration runs (security, time, pe
 
 {\bf Calibration in Position}
 
-Position calibration is needed to correct for the bias on the energy introduced by the geometry of the chamber. According with the results from NEXT-DEMO (see \cite{NEXT-DEMO}) PMTs detect less light departing for events outside the central region of the detector. To correct for the geometrical dependence we will use X-rays from \Xe ~ (30 keV)  and \KR ~(42 keV). X-rays are point like sources for NEXT.
+Position calibration is needed to correct for the bias on the energy introduced by the geometry of the chamber. According with the results from NEXT-DEMO (see \cite{NEXT-DEMO}) PMTs detect less light for events outside the central region of the detector. To correct for the geometrical dependence we will use X-rays from \Xe ~ (30 keV)  and \KR ~(42 keV). X-rays are point like sources for NEXT.
 The correction to the bias can be obtained from the measurement of the X-ray energy as a function of $z$ and the position on the transverse plane $x,z$.
 A large statistic sample is necessary to map the full vessel volume.
 For that reason, we plan to introduce \KR with the \Xe gas to increase the number of X ray interactions.  \KR ~as a half-life of $1.83 \pm 0.02$ hours and
@@ -52,7 +52,9 @@ Most probably NEW will be calibrated with \KR~ before each start of the run.
 Nevertheless we will dedicate R+D efforts to test the injection system and study possible secondary effects (as electron attachment). NEXT-DEMO prototype could be reused for this propose. 
 Successful examples using this calibration exits in other experiments (\cite{KR}), nevertheless, for contingency, we plan to explore other calibration sources. 
 
-Notice also that X-rays could be used to estimate the Point Spread Function (PSF), that is the probability that light reach a given SiPM from a point-like source. We can study the PSF as a function of the position on the chamber. This function a key ingredient for the reconstruction. Algorithms to estimate the PSF from data need to be in place, but no difficulties are expected here.  
+Notice also that X-rays could be used to estimate the Point Spread Function (PSF), the probability that light reach a given SiPM from a point-like source. We can study the PSF as a function of the position on the chamber. 
+This function a key ingredient for the reconstruction. 
+%Algorithms to estimate the PSF from data need to be in place, but no difficulties are expected here.  
  
 {\bf Reconstruction algorithms}
 
@@ -83,9 +85,9 @@ It has several steps: definition of the signal region, estimation of the contami
 Large MC samples will be used to define the signal selection. Multi-Variate Technique (such as Neural Network or Boosted Decision Trees) will be used to separate the signal from the background.
 The efficiency of the selection and the contamination levels will be estimated from data, using the \Tl ~two-electrons from the doble scape peak at ~1.6 MeV and the photo-peak at 2.6 MeV, as commented before. The energy scale and resolution will be estimated using the 2.6 MeV \Tl ~photo-peak. The expected energy spectrum of the detector will be obtained from the radio purity measurements in conjunction with the detector simulation. Uncertainties on the spectrum around the region of interest will be carefully estimated.
 The yield of \bb~ events will be obtained from the fit and used to measure the life-time of this process. 
-It has been already measured by EXO-200 \cite{EXO} and KamLAND-Zen \cite{KAMLAND}.
+%It has been already measured by EXO-200 \cite{EXO} and KamLAND-Zen \cite{KAMLAND}.
 This measurement is a mayor milestone of the NEXT collaboration. 
-It will confirm the capabilities of NEXT technique to detector a \bbonu signal and will provide an estimated, based on data, of the sensitivity to be obtain with NEXT-100 and NEXT 1 ton. 
+It will confirm the capabilities of NEXT technique to detector a \bbonu signal and will provide an estimate, based on data, of the sensitivity to be obtain with NEXT-100 and NEXT 1 ton. 
 
 The \bbonu search to be perform with NEXT-100 data is similar to the described above. The expected signal spectrum could be estimated from the famous \Tl ~2.6 MeV peak. 
 Data will be fit to all contributions, including a possible \bbonu ~signal.
