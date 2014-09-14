@@ -1,0 +1,71 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{Alvarez:2012haa}{article}{}
+  \true{moreauthor}
+  \name{author}{1}{}{%
+    {{}%
+     {Alvarez}{A.}%
+     {V.}{V.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{AV+1}
+  \strng{fullhash}{AV+1}
+  \field{sortinit}{A}
+  \verb{doi}
+  \verb 10.1088/1748-0221/7/06/T06001
+  \endverb
+  \verb{eprint}
+  \verb 1202.0721
+  \endverb
+  \field{pages}{T06001}
+  \field{title}{{NEXT-100 Technical Design Report (TDR): Executive Summary}}
+  \field{volume}{7}
+  \field{journaltitle}{JINST}
+  \field{eprinttype}{arXiv}
+  \field{eprintclass}{physics.ins-det}
+  \field{year}{2012}
+\endentry
+
+\entry{Alvarez:2012as}{article}{}
+  \true{moreauthor}
+  \name{author}{1}{}{%
+    {{}%
+     {Alvarez}{A.}%
+     {V.}{V.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{AV+1}
+  \strng{fullhash}{AV+1}
+  \field{sortinit}{A}
+  \verb{eprint}
+  \verb 1211.3961
+  \endverb
+  \field{title}{{Radiopurity control in the NEXT-100 double beta decay
+  experiment: procedures and initial measurements}}
+  \field{eprinttype}{arXiv}
+  \field{eprintclass}{physics.ins-det}
+  \field{year}{2012}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

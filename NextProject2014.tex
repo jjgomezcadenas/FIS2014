@@ -1,0 +1,375 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,11pt,oneside]{article}
+\usepackage[a4paper,vmargin={1.5cm,1.5cm},width=17cm]{geometry}
+\usepackage[style=verbose-inote,doi=false,sortcites=true,block=space,backend=bibtex]{biblatex}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage[spanish]{babel}
+\usepackage{microtype}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{eurosym}
+\usepackage{hyperref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% HEADERS
+\setlength{\headheight}{1cm}
+\setlength{\headsep}{0.5cm}
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{\fancyplain{}{\sc Grant Proposal }}
+\rhead{\fancyplain{}{\sc NEXT}}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt} % remove lines
+\renewcommand{\footrulewidth}{0pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Hack to make math formulas bold in section titles
+\makeatletter
+\DeclareRobustCommand*{\bfseries}{%
+  \not@math@alphabet\bfseries\mathbf
+  \fontseries\bfdefault\selectfont
+  \boldmath
+}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\thesection{\bf \textsf{\alph{section}}}
+
+%\nobibliography{biblio}
+%\bibliographystyle{JHEP}
+
+\bibliography{biblio}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%% Some useful definitions
+\input{src/Commands.tex}
+
+%% Heading
+\begin{center}
+{\Large \textsf{Convocatorias 2014}} \\ \vspace{0.3cm}
+{\Large  \textsf{Proyectos de I+D ``Excelencia'' y Proyectos de I+D+I ``Retos Investigación"}} \\ 
+{\Large \textsf{Dirección General de Investigación Científica y Técnica}} \\
+{\Large \textsf{Subdirección General de Proyectos de Investigación }} \\ 
+%\vspace{0.5cm}
+%{\LARGE \bf \textsf{Construcción puesta a punto y operación del experimento NEXT en el Laboratorio Subterráneo de Canfranc} }\\ 
+%\vspace{0.3cm}
+%{\LARGE \bf \textsf{Construction, commissioning and operation of the NEXT experiment at the Canfranc Underground Laboratory }}\\ 
+\end{center}
+
+
+\section{\bf \textsf{SUMMARY OF THE PROPOSAL}}
+
+{\sc Coordinator:} Juan José Gómez Cadenas.
+\vspace{0.3cm}
+
+{\sc Title of project:} Construction, commissioning, operation and R\&D for the NEXT experiment at the LSC.
+\vspace{0.3cm}
+
+{\sc ACRONYM OF THE COORDINATED PROJECT:} NEXT.
+\vspace{0.3cm}
+
+{\sc Groups participating in project:} Instituto de Física Corpuscular (IFIC), Universidad Politécnica de Valencia (UPV), Universidad de Santiago (US) \& Centro de Láseres Pulsados (CLPU). 
+\vspace{0.3cm}
+
+{\bf SUMMARY OF THE COORDINATED PROJECT:} 
+\vspace{0.3cm}
+
+\input{src/Summary.tex}
+
+ \vspace{0.3cm}
+
+{\bf KEYWORDS OF THE COORDINATED PROJECT:} neutrinos, TPC, HPXe, xenon, double beta decay, Canfranc, high pressure electroluminescence, barium-tagging, laser. 
+
+\section{\bf Introduction}
+\label{sec.intro}
+The goal of this document is to provide a full justification of the costs requested to the 2014 I+D+i program
+``Challenges of society''. This document has been prepared as a complement of the ``Scientific report'' (Memoria científica y técnica) submitted to the 2014 I+D+i program
+``Challenges of society'' and is not intended to replace it, but to provide further information to the ministry and evaluators. 
+
+The NEXT experiment is organised as an international collaboration, which includes groups from Spain, Portugal, Russia, USA, and Colombia. The spanish groups participating in NEXT are: Instituto de Física Corpuscular (IFIC), a joined center of the University of Valencia (UV) and the Spanish Council for Research (CSIC).The  Polytechnic University of Valencia (UPV). University of Santiago de Compostela (US). Autonomic University of Madrid (UAM); and University of Zaragoza (UZ). 
+
+The leading groups participating in this coordinated project (IFIC, UPV and US) form the core of the collaboration, while the contribution of UZ and UAM is essentially focused in the radio-purity measurements. The spokesperson (and PI of this coordinated project), the technical coordinator, the software coordinator and the leaders of several working  packages are members of IFIC. The coordinators of the electronics, DAQ, and risk management are members of the UPV. The coordinator of calibration and reconstruction is a member of US. The groups participating in this coordinated project invest 100\% of their research time and resources in the NEXT project. The UZ and UAM share their dedication between NEXT and other projects, and have/will present independent grant proposals.
+
+Furthermore, a strong collaboration is currently being formed between NEXT and the Center for Pulsed Lasers (CLPU), to develop the laser technology which could be used to tag the barium ion emitted in the \bb\ decays, resulting (when combined with the excellent energy resolution of NEXT and its topological signature) in a virtually background-free experiment. We are in the process of preparing a ``white paper'' detailing the theoretical grounds and the experimental procedures to address a successful  \BATA\ program. 
+
+This report is organised as follows. Section \ref{sec.retos}, explains the reasons why we believe that the project fits well into the program ``Challenges of society". Section \ref{sec.next} describes the bulk of the project (construction, commissioning and operation of the NEXT experiment at the LSC). Section \ref{next.costs} details the costs of the project (including equipment, personnel, travel and others) and also describes the additional funding sources and the co-funding requested to the I+D+i program.  Section \ref{sec.bata} describes the R\&D \BATA\ program in collaboration with CLPU. Section \ref{bata.costs} details the costs of the R\&D and also describes the additional funding sources and the co-funding requested to the I+D+i program.  Summary and conclusions are presented
+in section \ref{sec.conclu}.
+
+\section{\bf The NEXT project and the ``Challenges of society'' program }
+\label{sec.retos}
+\input{src/RETO6.tex}
+
+\section{\bf The NEXT project}
+\label{sec.next}
+
+\subsection*{The NEXT experiment and its innovative concepts}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{img/NEXT.png}
+\caption{\small A drawing of the NEXT-100 detector showing its main parts.  The pressure vessel (PV),  (130 cm inner diameter, 222 cm length, 1cm thick walls, with a total mass of 1\,200 kg) is made of a radio pure steel-titanium alloy.
+The inner copper shield (ICS), is made of ultra-pure copper bars, 12 cm thick, with a total mass of 9\,000 kg.The electrical system includes the field cage, cathode, EL grids and HV penetrators.
+The light tube is made of thin teflon sheets coated with TPB (a wavelength shifter). 
+The energy plane is made of 60 ultra radio pure PMTs housed in copper enclosures (cans).
+The tracking plane is made of SiPMs arranged into dice boards (DB). 
+}
+\end{figure}
+
+The \emph{Neutrino Experiment with a Xenon TPC} (NEXT)\footnote{\href{http://next.ific.uv.es/}{http://next.ific.uv.es/}} is an experimental program to search for \bbonu\ in \XE\ using  high-pressure xenon gas  time projection chambers (\HPXE). 
+
+The design of the NEXT chambers is optimised for energy resolution by using proportional electroluminescent (EL) amplification of the ionisation signal. The detection process involves using the prompt scintillation light from the gas as start-of-event time, drifting the ionisation charge to the anode by means of an electric field ($\sim0.3$ kV/cm at 15 bar) where secondary EL scintillation will be produced in the region defined by two highly transparent meshes, between which there is a field of $\sim20$ kV/cm at 15 bar. The detection of EL light provides an energy measurement (in the energy plane, made of PMTs, located behind the cathode) as well as providing tracking through its detection a few mm away from production at the anode plane, via a dense array (1 cm pitch) of 1-mm$^{2}$ SiPMs (the \emph{tracking plane}).
+
+The design of the NEXT-100 detector (Figure \ref{fig.NEXT100}) has been described in a \emph{Technical Design Report}.\footcite{Alvarez:2012haa} NEXT-100 has the structure of a Matryoshka (a russian nesting doll). The outermost layer is a shield made of lead, which attenuates the background from the LSC rock by 6 orders of magnitude (e.g., the \TL\ photons are attenuated from $\sim 10^{12}$~per year to $\sim 10^{6}$~per year). The pressure vessel, built out of steel, can hold 150 kg of xenon at 15 bar. Finally, an inner copper shield, 12 cm thick, constitutes the innermost and more radio-clean layer of the Matryoshka. In addition, all NEXT components have been selected and screened for low background. Of particular importance are the PMTs, whose activity is only 0.4 mBq of \BI\ and 0.3 mBq of \TL\ per unit. Our TDR included a detailed background model. A recent paper has validated these results from measurements in a extensive screening campaign carried out in the past year.\footcite{Alvarez:2012as} Currently, most of the major components entering the NEXT detector have been measured, and those numbers are incorporated in our background model. 
+
+\subsection*{NEXT prototypes and the demonstration of the technology}
+
+%%%%%%%%%
+%%%%%%%%%
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{img/DemoSetup2.png}
+\caption{\small The NEXT-DEMO prototype. Top-left: the pressure vessel, showing the HVFT and the mass spectrometer; bottom-left: an expanded view of the detector; (c) Teflon light tube; (d) energy plane, made of pressure resistant Hamamatsu R7378A PMTs; (e) field cage; (f) tracking plane equipped with 300 Hamamatsu MPPCs; top-right: the full setup at IFIC; bottom right: the field cage.} \label{fig.DEMO}
+\end{figure}
+%%%%%%%%%%
+
+From 2009 to 2013 the NEXT Collaboration has carried out an intense R\&D program (mostly funded by the CONSOLIDER-INGENIO project CUP) that has culminated in the construction, commissioning and operation of the NEXT-DEMO prototype located at IFIC, and the NEXT-DBDM prototype operating at LBNL. The description of these prototypes and the initial results obtained with them have been published\footcite{Alvarez:2012hh, Alvarez:2012nd, Alvarez:2012hu}.
+
+NEXT-DEMO, shown in figure \ref{fig.DEMO}, is as a large-scale prototype of NEXT-100. The pressure vessel has a length of 60 cm and a diameter of 30 cm. The vessel can withstand a pressure of up to 15 bar. The maximum capacity of the detector is 10 kg but in its current configuration (the fiducial volume is a hexagon of 16 cm diameter and 30 cm length) it holds 4 kg at 15 bar. NEXT-DEMO is  equipped with an energy plane made of 19 Hamamatsu R7378A PMTs and a tracking plane made of 256 Hamamatsu MPPCs. 
+
+The detector has been operating successfully for more than one year and has demonstrated: (a) very good operational stability, with no leaks and very few sparks; (b) good energy resolution ; (c) track reconstruction with PMTs and with SiPMs coated with TPB; (d) excellent electron drift lifetime, of the order of 20 ms. In summary, the operation of NEXT-DEMO has been instrumental in the development of the required knowledge to design and build the NEXT detector.
+
+The NEXT-DBDM prototype is a smaller chamber, with only 8 cm drift, but an aspect ratio (ratio diameter to length) similar to the NEXT detector. The device has been used to perform detailed energy resolution studies. NEXT-DBDM achieves a resolution of 1\% FWHM at 660 keV and 15 bar, which extrapolates to 0.5\% at \Qbb.
+
+\subsubsection*{Topological signature}
+
+%%%%%
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{img/Topology.png}
+\caption{\small NEXT has a topological signature, not available in most \bbonu\ detectors. The panel shows the reconstruction of a Monte Carlo signal (topleft) and background (bottomleft) event. The signal has two electrons (two blobs). The background has only one electron (one blob) and the associated emission of a 35 keV X-ray. The color codes energy deposition in the TPC. An scatter plot of the energy of the two blobs shows a clear separation between signal and background regions.}\label{fig.ETRK2}
+\end{figure}
+%%%%%
+	
+Double beta decay events leave a distinctive topological signature in HPXe: a continuous track with larger energy depositions (\emph{blobs}) at both ends due to the Bragg-like peaks in the d$E$/d$x$ of the stopping electrons (figure \ref{fig.ETRK2}, topleft). In contrast, background electrons are produced by Compton or photoelectric interactions, and are characterised by a single blob and, often, by a satellite cluster corresponding to the emission of $\sim30$-keV fluorescence x-rays by xenon (figure \ref{fig.ETRK2}, bottomleft).
+Reconstruction of this topology using the tracking plane provides a powerful means of background rejection, as can be observed in the figure. In our TDR we chose a conservative cut to separate double--blob from single--blob events which provided a suppression factor of 20 for the background while keeping 80\% of the signal.  
+
+\subsubsection*{Energy resolution}
+
+%%%%%
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{img/Cs660.png}
+\caption{\small The resolution of the photo peak for 662 keV electrons in NEXT-DBDM, at 15 bar is 1\% FWHM (0.5\% FWHM at \Qbb).}\label{fig.ERES}
+\end{figure}
+%%%%
+
+Figure \ref{fig.ERES} shows the resolution obtained with the NEXT-DBDM apparatus. A resolution of 1\% FWHM with 
+662 keV photons, has been measured, which extrapolates to 0.5\% FWHM at \Qbb. This result is not far from the expected limit obtained adding in quadrature the different factors that contribute to the resolution (Fano factor, photoelectron statistics and electronic noise). The resolution measured in NEXT-DEMO extrapolates to 0.7\% FWHM. The difference between both prototypes is due to better photoelectron statistics and aspect ratio in DBDM. The results, are, in any case, better than the target of 1\% FWHM described in the TDR.
+
+The status of the NEXT experiment and the results achieved by the prototypes have been described in a recent
+paper \footcite{Gomez-Cadenas:2013lta}.
+
+\subsection*{The NEW detector}
+\label{sec.new}
+
+%%%%%%%%%%
+\begin{figure}
+\centering
+\includegraphics[height=9cm]{img/NEW.png}
+\caption{The NEW apparatus.} \label{fig:NEW}
+\end{figure} 
+
+The NEW (NEXT-WHITE) apparatus\footnote{The name honours the memory of Professor James White, recently deceased and one of the key scientists of the NEXT Collaboration.}, shown in Figure \ref{fig:NEW} is the first NEXT detector to operate underground. NEW has a triple goal:
+
+\begin{enumerate}
+\item {\bf Technology}: it will validate the technological solutions adopted by NEXT-100.
+\item {\bf Radiopurity}: it will allow the NEXT collaboration an extra step in the implementation of a radiopure detector.
+\item {\bf Physics}: it will demonstrate with measurements of the \BI\ and \TL\ lines, as well as with the measurement of the \bbtnu\ spectrum, the physics capabilities of NEXT-100.
+\end{enumerate}
+
+NEW is a scale 1:2 in size (1:8 in mass) of NEXT-100. The energy plane contains 12 radio pure PMTs
+of 3 inches diameter, isolated from the gas inside vacuum-tight copper enclosures (we refer to these as PMT cans). The tracking plane technology consists of 30 Kapton Dice Boards (KDB) deploying 1800 SiPMs. The field cage has a diameter of 50 cm and a length of 60 cm. 
+
+\subsection*{Construction schedule}
+\label{sec.cons}
+
+The NEW detector is currently (September 2014) under construction. The detector will be assembled at IFIC for functional tests in December 2014, then dismounts and shipped to LSC for exhaustive cleaning (needed to eliminate any possible superficial radioactive contamination) before mounting it again, inside a clean tent in the second quarter (Q2) of 2015. NEW engineering run, needed to certify the technology will span Q3 and Q4 2015. In 2016, the construction of NEXT-100 will proceed in parallel with the operation of NEW at the LSC. 
+
+The construction of NEXT-100 will benefit of the methodology developed by NEW, since all their system are scaled-up versions of those in NEW. Taking into account that all sensors are currently acquired ( the pressure vessel and infrastructures are also in hand) and adding the fact that the construction procedures needed for NEXT-100 are being developed and extensively tested during NEW construction, the project management plan of the experiment estimates one year for the construction of the large apparatus. NEXT-100, will, therefore, start operations in 2017.
+
+\section{\bf Costs of the NEXT project}
+\label{next.costs}
+
+\input{tbs/NEW.tex}
+\input{tbs/NEXT100.tex}
+\input{tbs/INFRA.tex}
+
+\subsection{Costs of computing, calibration and slow controls}
+Computing is estimated in 69,521 \euro\ that will be covered by the AdG grant. The costs of the slow control (18,271 \euro) and the calibration (60,700 \euro, cost dominated by the need to purchase special radioactive sources for calibration) are assigned to FIS2014. 
+
+\subsection{Total costs equipment, NEXT construction}
+The total costs in equipment of NEXT construction are summarised in table  \ref{tab.TotalE}. They totalise about 4.6 million \euro\ including the xenon gas (1.1 million \euro). The {\bf external} contributions to the project (e.g, the money does not come from the spanish science system)
+add to 1,286,475m a figure slightly higher than the co-funding of 1,279,737
+requested in this project. 
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+Cost	& Total &	CUP &	AdG	& USA &	LSC &	FIS2014 \\
+ \hline
+& {\bf 4,601,873} &	798,582 & 	873,018 & 	413,457&	1,306,600 & 1,279,737 \\	
+ \hline\hline
+\end{tabular}  
+\caption{Total costs of the NEXT construction (equipment).}
+\label{tab.TotalE}
+\end{center}
+\end{table} 
+
+\input{tbs/Personnel.tex}
+\input{tbs/travel.tex}
+
+\subsection{Costs of construction, personnel and travel to LSC}
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+Subproject &	Construction &	Personnel  &	Travel& Total\\
+\hline
+COORD (IFIC)	& 859,091 &	600,000 &	181,000 &	1,640,091 \\
+ENG (UPV)	& 420,646 &	190,000	& 40,000	& 610,646 \\
+CALREC (US)	& 0	& 160,000	 & 40,000	& 200,000 \\
+ \hline\hline
+\end{tabular}  
+\caption{Costs of NEXT construction, personnel and travel to LSC.}
+\label{tab.CostsTotal}
+\end{center}
+\end{table} 
+
+The total costs of construction, personnel and travel to the LSC amounts to 
+{\bf 2,450,737 \euro}. The costs are distributed in three subprojects, called COORD (coordination, IFIC), 
+ENG (engineering, UPV) and CALREC (calibration and reconstruction, US). The distribution of costs per subproject is detailed in table \ref{tab.CostsTotal}. Notice that the construction funds requested
+by IFIC are matched by those provided by the AdG, and the construction funds requested by the 
+UPV are matched by those provided by the USA groups. All the personnel funds are matched by 
+funds provided by the AdG. The personnel from the co-ordinated project at the LSC will be matched
+by personnel from the international collaboration. 
+
+\subsection{Common fund}
+
+The operation and maintenance costs of NEXT will be covered by contributions of all the groups to a common fund (CF). The CF is being implemented in 2015 and will be firm from 2016 onwards. The CF is implemented by charging an annual quota (2,500 \euro) per Ph.D in the group. Table \ref{tab.CFD} gives the distribution of PH.Ds in the collaboration (as of September 2014) and their contribution to the CF. The total is 100 k\euro\ per year, which is the right order of magnitude to cover for common expenses (including supplies, cleaning material, maintenance of subsystems, nitrogen and argon gas, and replacements of expensive supplies such as gaskets) and to afford modest improvements to the systems. 
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{|l|c|c|c|}
+\hline
+Group &	number of Ph.D & 	Contribution \\
+\hline
+IIFIC &	10	& 25,000 \\
+UPV	& 3 &	7,500 \\
+US	& 2	& 5,000 \\
+UAM	  & 2 & 	5,000 \\
+UNIZAR	& 6	& 15,000 \\
+Portugal 	& 6	& 15,000 \\
+Russia	& 3	& 7,500 \\
+Colombia	& 3	& 7,500 \\
+USA	& 5 & 	12,500 \\
+\hline
+Total & 40& 100,000 \\
+ \hline\hline
+\end{tabular}  
+\caption{Contributions to NEXT common fund.}
+\label{tab.CFD}
+\end{center}
+\end{table} 
+
+In this project we require funds to contribute to the NEXT CF, corresponding to 3 years (2016, 2017 and 2018). The contributions to 2015 can be covered with remaining funds from CUP. The contribution is
+37,500 \euro\ per year, thus a total of 112,500 \euro. 
+		
+\section{\bf The R\&D \BATA\ program}
+\label{sec.bata}
+The priority of this project is the construction, commissioning and operation of the NEXT experiment. However, the greatest potential of NEXT is, in fact, its capability to become the {\bf leading World experiment} of the field. 
+
+%%%%%%
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{img/levelscheme.pdf}
+\caption{\label{fig.levelscheme} Level scheme for BaTa.} 
+\end{figure}
+	
+%%%%%%
+
+If no discovery is made by the current generation of experiments, the search for \bbonu\ processes will require detectors of larger mass (at least 1 ton), good resolution and extremely low specific background. The \HPXE\ technology has the potential to provide the most sensitive detector in the ton scale, by scaling the detector to a mass in the range of the ton and adding additional handles to further suppress the background. 
+
+One of the most promising possibilities is to develop the technology to unambiguously tag the barium ion produced in the xenon decay, $Xe \rightarrow Ba^{++} + 2 e$. The conceptual idea to tag $Ba^{+}$ is illustrated in Figure \ref{fig.BATA}. A ``blue'' laser of wavelength 493.54 nm excites (``pumps'') the S state, inducing $S \rightarrow P$~transitions, with a lifetime of $\sim$ 10 ns. About 30 \% of the times the \TwoP\ states decay to the state \TwoD, emitting ``red'' (649.86 nm) fluorescence in a characteristic time of 30 ns. The state \TwoD\ is metastable, but a second laser of suitable wavelength (2051.66 nm) can be used to induce the transition to the ground state (this is known as ``deshelving'').  The whole cycle takes less than 50 ns, and therefore several millions of red fluorescence photons can be emitted by a single ion. 
+
+Of course, the practical application of this beautiful conceptual idea is by no means easy, and in fact, it has been shown to be extremely difficult in liquid xenon by the work of the EXO collaboration. However, it may be feasible in an \HPXE\ detector, where a number of fortunate conditions may occur. These conditions are: a) charge reduction of the emitted barium ion, from $Ba^{++}$~to $Ba^{+}$, which can be induced by collisions with xenon atoms, or by the addition of a suitable quencher, such as TEA, as demonstrated by Sinclair et al\footnote{Sinclair.}, b) ``trapping'' of the barium ion ``in situ'' by the surrounding Xe atoms, which result in a very low drift velocity for the ion; c) location of the ion, done by reconstructing the event vertex. 
+
+All the above needs to be demonstrated with a systematic R\&D program, which must also address many other experimental issues such as pressure broadening of the laser, filtering of Rayleigh scattering, etc. Most importantly, such an experimental program must be carried out by an interdisciplinary group, combining the experience in laser spectroscopy and atomic physics, with the experience in \HPXE\ instrumentation.
+
+The on-going collaboration between the IFIC (and other groups of NEXT) and the Center for Pulsed Lasers (CLPU) \footnote{http://www.clpu.es.}, a national facility dedicated to ultra-intense lasers research and development has made possible to create precisely the interdisciplinary team needed for a successful R\&D program, which can culminate in a ``Barium-tagging Experiment with a Xenon TPC'' (BEXT). We are currently preparing a white paper which describes the theoretical grounds and details the experimental program to be developed. 
+
+Clearly the construction of a ton-scale \HPXE\ detector implementing a full \BATA\ technology is a very challenging enterprise. On the other hand, we believe that the incremental approach devised by the NEXT collaboration will also work in this case. The construction of the NEW detector is progressing without significant problems thanks to the expertise and know-how gained during DEMO phase, and we expect that NEXT-100 will fully benefit from the experience gained with NEW. Similarly, the \BATA\ technology could be demonstrated in the period of 4 years corresponding to this project,by approaching the problem step by step. 
+
+This is possible only thanks to the collaboration between NEXT and the CLPU.
+CLPU is the centre of reference in Spain regarding laser technology, and takes active part in several international and national projects. CLPU enters this co-ordinated project with a full time physicists, who will lead the subproject, Dr. Alicia V. Carpentier who has a well recognised international trajectory in laser-matter interaction. Moreover, CLPU considers this project of high priority and consequently will offer the collaboration of all the scientific department. This consists of a multidisciplinar team with broad experience in laser technology and development, and laser-matter interaction. 
+
+Furthermore, CLPU will support this project with some of the already operating laser systems in its installation. This is extremely important because such systems usually cost of the order of several hundreds of thousand euros which is totally out of the economical scope of this project. The human resources needed to operate the laser systems will be provided by CLPU as well. We will  also like to mention that the small components needed for the construction of the small prototypes will be afforded by the already established NEXT-CLPU collaboration (funds from AdG). In addition, the CLPU and IFIC groups will apply for  \emph{EXPLORA} grants in the next calls.
+
+The different objectives of this subproject are:
+
+
+\subsection{The \BATA\ program}
+The R\&D of the Barium Tagging (\BATA) program includes:
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{img/levelscheme2.pdf}
+\caption{\label{fig.levelscheme2} Level scheme for BaTa with an infrared deshelving laser.} 
+\end{figure}
+
+\begin{itemize}
+	\item \textbf{Proof of principle experiment with Ba ions generated by means of an electrical discharge.}
+In a first round of experiments we will excite resonantly the S$\leftrightarrow$P transition of Ba$^+$ ions generated by an electrical discharge between two barium electrodes and will collect the fluorescence signal of the P$\rightarrow$D transition (see Fig.\,\ref{fig.levelscheme}). Although this generation method is not ideal because several different species different from Ba ions will be generated, e.g., molecules like BaO or clusters, it does not need a major technological development. It is expected that these initial set of experiments will provide valuable information about the population dynamics in Ba$^+$ ions, and the influence of the different homogenous and in-homogenous broadening mechanisms. It is important to mention that the laser system required for this objective will be provided by the CLPU, and the rest of the material by the ongoing collaboration NEXT-CLPU (e.g., AdG grant).
+
+	\item \textbf{Proof of principle experiment with Ba ions generated by an ion source to be developed.}	
+In this objective, in order to get a better approximation of the final conditions of NEXT experiment and with the financial support of a future EXPLORA project, a source of ions will be designed and constructed. This ion source will be based on selective ionisation and mass spectrometry techniques, and it will allow a perfect selection of a target specie. Once the source is ready we will repeat the set of experiments of the previous objective but without any parasitic contribution of unwanted compounds. 
+	
+	\item \textbf{Proof of principle experiment with Ba ions generated by means of a developed ion source and with a magneto trap.}	
+Once the ion source is in operation, in a following objective, we will develop a magneto trap for Ba$^+$  ions. This trap will allow us to have an excellent degree of control over the experimental conditions and to approach the conditions of NEXT. For instance we will carry out different measurements comparing the collected fluorescence signal as a function of the pressure of the Ba$^+$ ions and the pressure of the surrounding environment. These measurements are mandatory because the population dynamics is really sensitive to pressure, i.e., to collisions. 
+	
+	\item \textbf{Proof of principle experiment with an additional laser for deshelving the D state.}
+A possible scenario is that the collisional induced decay between the metastable state D and the ground state S is either not effective or too slow for obtaining an appreciable fluorescence signal. In this situation the population is trapped in the metastable state D  and the fluorescence cycle can not be closed. To avoid this difficulty our approach will be to use a second laser to induce a two photon transition, one photon is forbidden by selection rules, between the states D and S (see Fig.\,\ref{fig.levelscheme2}). This laser must have a wavelength of around 4.1\,$\mu$m which is not easily accesible by commercial laser systems. Our objective is therefore to develop a laser system at this wavelength, and to repeat the experimental matrix defined in previous objectives with two lasers.
+	
+\end{itemize}
+
+\section{\BATA\ R\&D costs}
+\label{bat.costs}
+
+\subsection{R\&D requirements}
+The R\&D costs requested to this project are modest. They are:
+\begin{enumerate}
+\item {\bf A contribution to build an infra-red laser}. The AdG and funds from CLPU cover most of the items needed for the R\&D in 2015 and we fully expect that the EXPLORA project (plus one or more H2020 projects) will cover the R\& program for the subsequent year. However, a much needed and not fully covered item is a a (infra-) red laser of 4.1\,$\mu$m. Such system is needed in our experiments to enhance the transitions between the meta-stable D state in the Ba+ ion and the ground state. On the other hand, it is important to remark that this specific wavelength is not easily accesible by  commercial laser systems, and in fact, there is keen interest in the laser community to develop such laser, due to the fact that this wavelength is not absorbed by the atmosphere and therefore presents many different technological applications. We expect to be able to patent the design and believe it is a clear case of obvious and important industrial return. 
+\item {\bf A modest contribution to acquire small equipment and fungible at UPV and US}.
+\item {\bf One FPI grant}, to work at the CLPU, in the \BATA\ program. 
+\end{enumerate}
+
+\subsection{R\&D costs}
+We require a total of 150,000 \euro\ for this program. The bulk of the cost is the development of the infra-red laser (100,000 \euro). To this, we add 25,000 \euro\ for small equipment and fungibles at the US and at the UPV. 
+
+\section{Conclusions}
+\label{sec.conclu}
+
+This report summarises the scientific and economic data relevant to the NEXT project, including the R\&D \BATA\ program. The report fully describes the co-funding request to the I+D+i program of ``Challenges of society''. In addition to its scientific excellence, we would like to remark that NEXT is unique in the area of particle physics. As an international collaboration being developed in our national underground laboratory (LSC) and lead by spanish groups, it brings to Spain considerable know-how and external funding. In particular, it is currently the only example of particle-physics experiment in Spain having obtained an advanced grant of the ERC (granted to the spokesperson and PI of this project), 
+
+Of particular interest is also the collaboration with CLPU, which expands the scope of this project to a very interdisciplinar field, including atomic physics and laser-matter interaction. The prospects of industrial returns in the \BATA\ program appear very high, in particular thanks to the development of infra-red laser technology and controlled ions sources, areas with an increasing number of industrial and scientific applications. 
+
+Last but not least, the NEXT experiment, and/or the future BEXT experiment, including the \BATA\ technology have the clear potential of leading a major scientific discovery.
+
+\end{document}
+
