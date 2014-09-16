@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.31)  14 SEP 2014 16:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.31)  15 SEP 2014 00:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -886,7 +886,7 @@ Package biblatex Warning: 'babel' detected but 'csquotes' missing.
 LaTeX Info: Redefining \sptext on input line 29.
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
- (./src/RETO6.tex.aux))
+)
 \openout1 = `NextProject2014.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
@@ -2005,9 +2005,6 @@ Package rerunfilecheck Info: File `NextProject2014.out' has not changed.
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
 (biblatex)                NextProject2014
 (biblatex)                and rerun LaTeX afterwards.
@@ -2017,13 +2014,13 @@ Package logreq Info: Writing requests to 'NextProject2014.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 13993 strings out of 493315
- 220335 string characters out of 6137903
- 457331 words of memory out of 5000000
- 16973 multiletter control sequences out of 15000+600000
+ 13989 strings out of 493315
+ 220274 string characters out of 6137903
+ 455993 words of memory out of 5000000
+ 16972 multiletter control sequences out of 15000+600000
  93122 words of font info for 140 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,11n,43p,1396b,1050s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,11n,43p,1396b,1048s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/
 texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2013/
 texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2013/texmf-dist
@@ -2045,7 +2042,7 @@ onts/type1/public/lm/lmri10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1
 /public/lm/lmss12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm
 /lmssbx10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmsy10.
 pfb>
-Output written on NextProject2014.pdf (20 pages, 3238371 bytes).
+Output written on NextProject2014.pdf (20 pages, 3238395 bytes).
 PDF statistics:
  431 PDF objects out of 1000 (max. 8388607)
  367 compressed objects within 4 object streams
