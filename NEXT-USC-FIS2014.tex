@@ -1,0 +1,188 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,11pt,oneside]{article}
+\usepackage[a4paper,vmargin={1.5cm,1.5cm},width=17cm]{geometry}
+\usepackage[style=verbose-inote,doi=false,sortcites=true,block=space]{biblatex}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage[spanish]{babel}
+\usepackage{microtype}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{eurosym}
+\usepackage{hyperref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% HEADERS
+\setlength{\headheight}{1cm}
+\setlength{\headsep}{0.5cm}
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{\fancyplain{}{\sc Memoria científico técnica de proyectos coordinados}}
+\rhead{\fancyplain{}{\sc NEXT}}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt} % remove lines
+\renewcommand{\footrulewidth}{0pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Hack to make math formulas bold in section titles
+\makeatletter
+\DeclareRobustCommand*{\bfseries}{%
+  \not@math@alphabet\bfseries\mathbf
+  \fontseries\bfdefault\selectfont
+  \boldmath
+}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\thesection{\bf \textsf{\alph{section}}}
+
+%\nobibliography{biblio}
+%\bibliographystyle{JHEP}
+
+\bibliography{biblio}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%% Some useful definitions
+\input{src/Commands.tex}
+
+%% Heading
+\begin{center}
+{\Large \textsf{Convocatorias 2014}} \\ \vspace{0.3cm}
+{\Large  \textsf{Proyectos de I+D ``Excelencia'' y Proyectos de I+D+I ``Retos Investigación"}} \\ 
+{\Large \textsf{Dirección General de Investigación Científica y Técnica}} \\
+{\Large \textsf{Subdirección General de Proyectos de Investigación }} \\ 
+%\vspace{0.5cm}
+%{\LARGE \bf \textsf{Construcción puesta a punto y operación del experimento NEXT en el Laboratorio Subterráneo de Canfranc} }\\ 
+%\vspace{0.3cm}
+%{\LARGE \bf \textsf{Construction, commissioning and operation of the NEXT experiment at the Canfranc Underground Laboratory }}\\ 
+\end{center}
+
+
+\section{\bf \textsf{RESUMEN DE LA PROPUESTA/SUMMARY OF THE PROPOSAL}}
+\subsection{\sc DATOS DEL PROYECTO COORDINADO}
+
+{\sc INVESTIGADOR COORDINADOR PRINCIPAL:} Ju\'an Jos\'e  G\'omez-Cadenas
+\vspace{0.3cm}
+
+{\sc TÍTULO GENERAL DEL PROYECTO COORDINADO:} Construcci\'on, instalaci\'on y operaci\'on del experimento NEXT en el Laboratorio Subterraneo de Canfranc
+
+\vspace{0.3cm}
+
+{\sc ACRÓNIMO DEL PROYECTO COORDINADO:} NEXT.
+\vspace{0.3cm}
+
+{\bf RESUMEN DEL PROYECTO COORDINADO:} 
+\vspace{0.3cm}
+%\input{src/Resumen.tex}
+ 
+ \vspace{0.3cm}
+
+{\sc PALABRAS CLAVE DEL PROYECTO COORDINADO:} neutrinos, TPC, HPXe, xenón, desintegración doble beta, Canfranc, alta presión, electroluminescencia. 
+
+ \vspace{0.6cm}
+{\sc TITLE OF THE COORDINATED PROJECT:} Construction commissioning and operation of the NEXT experiment at the LSC underground laboratory. 
+\vspace{0.3cm}
+
+{\sc ACRONYM OF THE COORDINATED PROJECT:} NEXT.
+\vspace{0.3cm}
+
+{\bf SUMMARY OF THE COORDINATED PROJECT:} 
+\vspace{0.3cm}
+
+%\input{src/Summary.tex}
+
+ \vspace{0.3cm}
+
+{\bf KEYWORDS OF THE COORDINATED PROJECT:} neutrinos, TPC, HPXe, xenon, double beta decay, Canfranc, high pressure electroluminescence. 
+
+\section{INFORMACIÓN ESPECÍFICA DEL EQUIPO}
+
+\input{src/CALREC/USC_team.tex}
+
+\input{src/CALREC/USC_projects.tex}
+
+\section{\bf DOCUMENTO CIENTÍFICO/SCIENTIFIC DOCUMENT}
+
+\subsection{\sc JUSTIFICACIÓN DE LA COORDINACIÓN/JUSTIFICATION OF THE COORDINATION}
+\vspace{0.3cm}
+
+%\input{src/Coordination.tex}
+
+\subsection{\bf PROPUESTA CIENTÍFICA/SCIENTIFIC PROPOSAL}
+
+%\input{src/CALREC/motivation.tex}
+
+\subsection*{\sc Antecedentes/Previous work}
+
+%\input{src/CALIB/previouswork.tex}
+
+\subsection*{\sc Objetivos/Objectives}
+
+%\input{src/CALIB/objectives.tex}
+
+\subsection*{\sc Adecuación al programa de Retos de la sociedad/ Idoneity to the program of challenges of society  }
+
+%\input{src/RETO6.tex}
+
+
+\subsection*{\sc Objetivos subproyectos/ Objectives of subprojects}
+
+%\input{src/PMP.tex}
+
+%\input{src/ObjCoord.tex}
+
+%\input{src/ObjElec.tex}
+
+\input{src/CALREC/objectives.tex}
+
+%\input{src/ObjBata.tex}
+% Los objetivos específicos de cada uno de los subproyectos participantes, enumerándolos brevemente, con claridad, precisión y de manera realista (acorde con la duración prevista del proyecto).
+%
+% En los subproyectos con dos investigadores principales, deberá indicarse expresamente de qué objetivos específicos se hará responsable cada uno de ellos.
+%
+
+\subsection*{\sc Metodología}
+
+%4. El detalle de la metodología propuesta en cada uno de los subproyectos participantes, incluyendo la viabilidad metodológica de las tareas. Si fuera necesario, también se incluirá una evaluación crítica de las posibles dificultades de un objetivo específico y un plan de contingencia para resolverlas.
+%
+
+\input{src/CALREC/methodology.tex}
+
+\subsection*{\sc Infraestructuras y equipos}
+
+%5. La descripción de los medios materiales, infraestructuras y equipamientos singulares a disposición de los participantes que permitan abordar la metodología propuesta.
+%
+
+%\input{src/CALIB/infrastructure}
+
+\subsection*{\sc Cronograma}
+
+%6. Un cronograma claro y preciso de las fases e hitos previstos en relación con los objetivos planteados en la propuesta en su conjunto.
+%
+
+\input{src/CALREC/schedule.tex}
+
+\subsection*{\sc Personal}
+%7. Si se solicita ayuda para la contratación de personal, justificación de su necesidad y descripción de las tareas que vaya a desarrollar.
+
+\input{src/CALREC/personal.tex}
+
+\subsection{\sc IMPACTO ESPERADO DE LOS RESULTADOS/EXPECTED IMPACT}
+
+%\input{src/CAL/impact}
+
+\subsection{\sc CAPACIDAD FORMATIVA DEL EQUIPO/TRAINING CAPABILITIES OF THE GROUP}
+
+\input{src/CALREC/USC_resources.tex}
+
+
+\input{src/CALREC/USC_training.tex}
+
+\subsection{\sc IMPLICACIONES ÉTICAS Y/O DE BIOSEGURIDAD/ETHICS AND SAFETY IMPLICATIONS}
+
+\end{document}
