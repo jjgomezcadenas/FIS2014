@@ -1,0 +1,455 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{Agostini:2013mzu}{article}{}
+  \true{moreauthor}
+  \name{author}{1}{}{%
+    {{}%
+     {Agostini}{A.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{AM+1}
+  \strng{fullhash}{AM+1}
+  \field{sortinit}{A}
+  \true{singletitle}
+  \verb{doi}
+  \verb 10.1103/PhysRevLett.111.122503
+  \endverb
+  \verb{eprint}
+  \verb 1307.4720
+  \endverb
+  \field{number}{12}
+  \field{pages}{122503}
+  \field{title}{{Results on Neutrinoless Double-$\beta$ Decay of $^{76}$Ge from
+  Phase I of the GERDA Experiment}}
+  \field{volume}{111}
+  \field{journaltitle}{Phys.Rev.Lett.}
+  \field{eprinttype}{arXiv}
+  \field{eprintclass}{nucl-ex}
+  \field{year}{2013}
+\endentry
+
+\entry{Albert:2014awa}{article}{}
+  \true{moreauthor}
+  \name{author}{1}{}{%
+    {{}%
+     {Albert}{A.}%
+     {J.B.}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{AJ+1}
+  \strng{fullhash}{AJ+1}
+  \field{sortinit}{A}
+  \true{singletitle}
+  \verb{doi}
+  \verb 10.1038/nature13432
+  \endverb
+  \verb{eprint}
+  \verb 1402.6956
+  \endverb
+  \field{pages}{229‚Äì234}
+  \field{title}{{Search for Majorana neutrinos with the first two years of
+  EXO-200 data}}
+  \field{volume}{510}
+  \field{journaltitle}{Nature}
+  \field{eprinttype}{arXiv}
+  \field{eprintclass}{nucl-ex}
+  \field{year}{2014}
+\endentry
+
+\entry{Alvarez:2012nd}{article}{}
+  \true{moreauthor}
+  \name{author}{1}{}{%
+    {{}%
+     {\'Alvarez}{A.}%
+     {V.}{V.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{AV+2}
+  \strng{fullhash}{AV+2}
+  \field{sortinit}{A}
+  \verb{eprint}
+  \verb 1211.4838
+  \endverb
+  \field{title}{{Initial results of NEXT-DEMO, a large-scale prototype of the
+  NEXT-100 experiment}}
+  \field{eprinttype}{arXiv}
+  \field{eprintclass}{physics.ins-det}
+  \field{year}{2012}
+\endentry
+
+\entry{Alvarez:2012hu}{article}{}
+  \true{moreauthor}
+  \name{author}{1}{}{%
+    {{}%
+     {\'Alvarez}{A.}%
+     {V.}{V.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{AV+2}
+  \strng{fullhash}{AV+2}
+  \field{sortinit}{A}
+  \verb{eprint}
+  \verb 1211.4508
+  \endverb
+  \field{title}{{Ionization and scintillation response of high-pressure xenon
+  gas to alpha particles}}
+  \field{eprinttype}{arXiv}
+  \field{eprintclass}{physics.ins-det}
+  \field{year}{2012}
+\endentry
+
+\entry{Alvarez:2012hh}{article}{}
+  \true{moreauthor}
+  \name{author}{1}{}{%
+    {{}%
+     {Alvarez}{A.}%
+     {V.}{V.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{AV+1}
+  \strng{fullhash}{AV+1}
+  \field{sortinit}{A}
+  \verb{eprint}
+  \verb 1211.4474
+  \endverb
+  \field{title}{{Near-Intrinsic Energy Resolution for 30 to 662 keV Gamma Rays
+  in a High Pressure Xenon Electroluminescent TPC}}
+  \field{eprinttype}{arXiv}
+  \field{eprintclass}{physics.ins-det}
+  \field{year}{2012}
+\endentry
+
+\entry{Alvarez:2012haa}{article}{}
+  \true{moreauthor}
+  \name{author}{1}{}{%
+    {{}%
+     {Alvarez}{A.}%
+     {V.}{V.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{AV+1}
+  \strng{fullhash}{AV+1}
+  \field{sortinit}{A}
+  \verb{doi}
+  \verb 10.1088/1748-0221/7/06/T06001
+  \endverb
+  \verb{eprint}
+  \verb 1202.0721
+  \endverb
+  \field{pages}{T06001}
+  \field{title}{{NEXT-100 Technical Design Report (TDR): Executive Summary}}
+  \field{volume}{7}
+  \field{journaltitle}{JINST}
+  \field{eprinttype}{arXiv}
+  \field{eprintclass}{physics.ins-det}
+  \field{year}{2012}
+\endentry
+
+\entry{PhysRevLett.112.051303}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Battye}{B.}%
+     {Richard~A.}{R.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Moss}{M.}%
+     {Adam}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {American Physical Society}%
+  }
+  \strng{namehash}{BRAMA1}
+  \strng{fullhash}{BRAMA1}
+  \field{sortinit}{B}
+  \true{singletitle}
+  \verb{doi}
+  \verb 10.1103/PhysRevLett.112.051303
+  \endverb
+  \field{issue}{5}
+  \field{pages}{051303}
+  \field{title}{Evidence for Massive Neutrinos from Cosmic Microwave Background
+  and Lensing Observations}
+  \verb{url}
+  \verb http://link.aps.org/doi/10.1103/PhysRevLett.112.051303
+  \endverb
+  \field{volume}{112}
+  \field{journaltitle}{Phys. Rev. Lett.}
+  \field{year}{2014}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{Esteve2012}{article}{}
+  \true{moreauthor}
+  \name{author}{1}{}{%
+    {{}%
+     {Esteve}{E.}%
+     {R.}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{ER+1}
+  \strng{fullhash}{ER+1}
+  \field{sortinit}{E}
+  \true{singletitle}
+  \verb{doi}
+  \verb 10.1088/1748-0221/8/05/T05002
+  \endverb
+  \field{title}{{Design and characterisation of the SiPM tracking system of
+  NEXT-DEMO, a demonstrator prototype of the NEXT-100 experiment}}
+  \field{journaltitle}{8}
+  \field{year}{2013}
+\endentry
+
+\entry{GomezCadenas:2013ue}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {G\'omez-Cadenas}{G.-C.}%
+     {J.J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mart\'in-Albo}{M.-A.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Munoz~Vidal}{M.~V.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pena-Garay}{P.-G.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{GCJ+1}
+  \strng{fullhash}{GCJMAJMVJPGC1}
+  \field{sortinit}{G}
+  \true{singletitle}
+  \verb{doi}
+  \verb 10.1088/1475-7516/2013/03/043
+  \endverb
+  \verb{eprint}
+  \verb 1301.2901
+  \endverb
+  \field{pages}{043}
+  \field{title}{{Discovery potential of xenon-based neutrinoless double beta
+  decay experiments in light of small angular scale CMB observations}}
+  \field{volume}{1303}
+  \field{journaltitle}{JCAP}
+  \field{eprinttype}{arXiv}
+  \field{eprintclass}{hep-ph}
+  \field{year}{2013}
+\endentry
+
+\entry{Gomez-Cadenas:2013lta}{article}{}
+  \true{moreauthor}
+  \name{author}{1}{}{%
+    {{}%
+     {Gomez-Cadenas}{G.-C.}%
+     {J.J.}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{GCJ+2}
+  \strng{fullhash}{GCJ+1}
+  \field{sortinit}{G}
+  \true{singletitle}
+  \verb{doi}
+  \verb 10.1155/2014/907067
+  \endverb
+  \verb{eprint}
+  \verb 1307.3914
+  \endverb
+  \field{title}{{Present status and future perspectives of the NEXT
+  experiment}}
+  \field{eprinttype}{arXiv}
+  \field{eprintclass}{physics.ins-det}
+  \field{year}{2013}
+\endentry
+
+\entry{Herrero2012}{article}{}
+  \true{moreauthor}
+  \name{author}{1}{}{%
+    {{}%
+     {Herrero}{H.}%
+     {V.}{V.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{HV+1}
+  \strng{fullhash}{HV+1}
+  \field{sortinit}{H}
+  \true{singletitle}
+  \verb{doi}
+  \verb 10.1016/j.nima.2011.11.024
+  \endverb
+  \field{title}{{Readout electronics for the SiPM tracking plane in the NEXT-1
+  prototype}}
+  \field{volume}{695}
+  \field{journaltitle}{NIM-A}
+  \field{year}{2012}
+\endentry
+
+\entry{Lorca:2014sra}{article}{}
+  \true{moreauthor}
+  \name{author}{1}{}{%
+    {{}%
+     {Lorca}{L.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{LD+1}
+  \strng{fullhash}{LD+1}
+  \field{sortinit}{L}
+  \true{singletitle}
+  \verb{eprint}
+  \verb 1407.3966
+  \endverb
+  \field{title}{{Characterisation of NEXT-DEMO using xenon K$_{\alpha}$
+  X-rays}}
+  \field{eprinttype}{arXiv}
+  \field{eprintclass}{physics.ins-det}
+  \field{year}{2014}
+\endentry
+
+\entry{SRS2013}{article}{}
+  \true{moreauthor}
+  \name{author}{1}{}{%
+    {{}%
+     {Martoiu}{M.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{MS+1}
+  \strng{fullhash}{MS+1}
+  \field{sortinit}{M}
+  \true{singletitle}
+  \verb{doi}
+  \verb 10.1088/1748-0221/8/03/C03015
+  \endverb
+  \field{title}{{Development of the scalable readout system for micro-pattern
+  gas detectors and other applications}}
+  \field{volume}{8}
+  \field{journaltitle}{JINST}
+  \field{year}{2013}
+\endentry
+
+\entry{TheKamLAND-Zen:2014lma}{article}{}
+  \field{sortinit}{R}
+  \true{singletitle}
+  \verb{eprint}
+  \verb 1409.0077
+  \endverb
+  \field{title}{{Results from KamLAND-Zen}}
+  \field{eprinttype}{arXiv}
+  \field{eprintclass}{physics.ins-det}
+  \field{year}{2014}
+\endentry
+
+\entry{Gil2012}{article}{}
+  \true{moreauthor}
+  \name{author}{1}{}{%
+    {{}%
+     {Toledo}{T.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{TJ+1}
+  \strng{fullhash}{TJ+1}
+  \field{sortinit}{T}
+  \verb{doi}
+  \verb 10.1016/j.nima.2011.11.024
+  \endverb
+  \field{title}{{Front-end electronics for accurate energy measurement of
+  double beta decays}}
+  \field{volume}{695}
+  \field{journaltitle}{NIM-A}
+  \field{year}{2012}
+\endentry
+
+\entry{Toledo2011}{article}{}
+  \true{moreauthor}
+  \name{author}{1}{}{%
+    {{}%
+     {Toledo}{T.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{TJ+1}
+  \strng{fullhash}{TJ+1}
+  \field{sortinit}{T}
+  \verb{doi}
+  \verb 10.1088/1748-0221/6/11/C11028
+  \endverb
+  \field{title}{{The Front-End Concentrator card for the RD51 Scalable Readout
+  System}}
+  \field{volume}{6}
+  \field{journaltitle}{JINST}
+  \field{year}{2011}
+\endentry
+
+\entry{Alvarez:2013gxa}{article}{}
+  \true{moreauthor}
+  \name{author}{1}{}{%
+    {{}%
+     {√Ålvarez}{√.}%
+     {V.}{V.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{√V+1}
+  \strng{fullhash}{√V+1}
+  \field{sortinit}{√}
+  \true{singletitle}
+  \verb{doi}
+  \verb 10.1088/1748-0221/8/09/P09011
+  \endverb
+  \verb{eprint}
+  \verb 1306.0471
+  \endverb
+  \field{pages}{P09011}
+  \field{title}{{Operation and first results of the NEXT-DEMO prototype using a
+  silicon photomultiplier tracking array}}
+  \field{volume}{8}
+  \field{journaltitle}{JINST}
+  \field{eprinttype}{arXiv}
+  \field{eprintclass}{physics.ins-det}
+  \field{year}{2013}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput
