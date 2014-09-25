@@ -1,0 +1,192 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,11pt,oneside]{article}
+\usepackage[a4paper,vmargin={1.5cm,1.5cm},width=16cm]{geometry}
+\usepackage{microtype}
+\usepackage[style=verbose-inote,doi=false,sortcites=true,block=space,backend=bibtex]{biblatex}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage[spanish]{babel}
+\usepackage{microtype}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{eurosym}
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% HEADERS 
+\setlength{\headheight}{1cm}
+\setlength{\headsep}{0.5cm}
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{\fancyplain{}{\sc Short CV (CVA)}}
+\rhead{\fancyplain{}{\sc J.J. G\'omez-Cadenas}}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt} % remove lines
+\renewcommand{\footrulewidth}{0pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Hack to make math formulas bold in section titles
+\makeatletter
+\DeclareRobustCommand*{\bfseries}{%
+  \not@math@alphabet\bfseries\mathbf
+  \fontseries\bfdefault\selectfont
+  \boldmath
+}
+\makeatother
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\thesection{\bf \textsf{\alph{section}}}
+%\def\thesubsection{\alph{subsection}}
+\def\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\bibliography{biblio}
+\begin{document}
+\input{src/Commands.tex}
+
+\begin{center}
+{\Large \textsf{Currículum Abreviado (Short CV)--- CVA}} \\ \vspace{0.3cm}
+{\Large  \textsf{Juan José Gómez Cadenas}} \\ 
+{\Large \textsf{25-Sept-2014}} 
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% HEADING AN\begin{document}
+\section{Personal data}
+\begin{table}[h!]
+\begin{center}
+%\caption{Personal data}
+\begin{tabular}{| l | l | l | l |}
+\hline
+\multicolumn{2}{|l|}{Name and surname } & \multicolumn{2}{|l|}{ Juan José Gómez Cadenas}\\
+%Name & Juan José Gómez Cadenas &  &   \\
+\hline
+DNI & 40.915.139.W & Age & 54 \\
+\hline
+Researcher ID &  L-2003-2014 &  Orcid ID &  http://orcid.org/0000-0002-8224-7714 \\
+\hline
+\end{tabular}
+\label{tab:personal}
+\end{center}
+\end{table} 
+
+\subsection{Academic data}
+\begin{table}[h!]
+\begin{center}
+%\caption{Professional data}
+\begin{tabular}{| l | l | l | l |}
+\hline
+\multicolumn{2}{|l|}{Institution} & \multicolumn{2}{|l|}{ Consejo Superior de Investigaciones Científicas  (CSIC)}\\
+\hline
+\multicolumn{2}{|l|}{Department} & \multicolumn{2}{|l|}{ Instituto de Física Corpuscular (IFIC) }\\
+\hline
+\multicolumn{2}{|l|}{Adress} & \multicolumn{2}{|l|}{ Catedrático José Beltrán, 2  }\\
+\hline
+Phone & 654213611 & e-mail & gomez@mail.cern.ch\\
+\hline
+\multicolumn{2}{|l|}{UNESCO code} & \multicolumn{2}{|l|}{ 220700  }\\
+\hline
+\multicolumn{2}{|l|}{keywords} & \multicolumn{2}{|l|}{ Majorana neutrinos, double beta decay, xenon, neutrino oscillations}\\
+\hline
+\end{tabular}
+\label{tab:profesional}
+\end{center}
+\end{table} 
+
+\subsection{Professional data}
+\begin{table}[h!]
+\begin{center}
+%\caption{Professional data}
+\begin{tabular}{| l | l | l | }
+\hline
+Degree & University & Year\\
+\hline
+Degree (equivalent to Master) in Physics & University of Valencia & 1983 \\
+Ph.D. in Physics & University of Valencia & 1987 \\
+\hline
+\end{tabular}
+\label{tab:academic}
+\end{center}
+\end{table} 
+
+\subsection{Indicators of scientific production}
+
+\begin{table}[h!]
+\begin{center}
+\caption{Citations according to SPIRES data base}
+\begin{tabular}{| l | l | l | }
+\hline
+Cittation summary results & Citable papers & Citable and published\\
+\hline
+Total number of papers analysed &	253	&215\\
+Total number of citations &	18,243	& 17,257 \\
+Average citations per paper &	72.1 &	80.3 \\
+Renowned papers (500+)	 & 4	& 4 \\
+Famous papers (250-499)	 & 5	& 5 \\
+Very well-known papers (100-249) &	21 &	17\\
+Well-known papers (50-99) &	50 &	48\\
+Known papers (10-49) &	119	& 115\\
+h index &63 &	61\\
+\hline
+\end{tabular}
+\label{tab:spires}
+\end{center}
+\end{table} 
+
+\begin{itemize}
+\item {\bf Number of research 6-years steps (sexenios) }: 4 out of 4. The last approved period was 2004-2009. 
+\item {\bf Ph.D. thesis advised}: The researcher has supervised a total of 11 Ph.D. students: De Fez (94), Lozano (95), Hernando (98), Cervera (02), Vidal (03), Burguet (08), Tornero (08), Novella (09), Catala (14) Martin-Albo (14) and Monrabal (14), six of whom have presented their thesis in the last 10 years (3 of them in 2014): De Fez, Lozano, Hernando and Cervera have obtained academic positions (Emirates, Granada, U. of Santiago and Valencia). Novella has been a Marie Curie fellow and has obtained a R\&C in 2014. Burguet works in a software company developing Internet products and Tornero has a permanent position in medical physics (radiotherapy). Catala and Vidal have continued their career as teachers. Martin-Albo and Monrabal will take post-doc position in the US in 2015 (Texas U. and Fermilab). 
+\item{\bf Citations:} The data, according to the SPIRES database\footnote{inspirehep.net/search?ln=en\&ln=en\&p=find+a+gomez+cadenas++or+gomez+y+cadenas+or+gomez-cadenas+or+cadenas\&of=hcs\&action\_search=Search\&sf=earliestdate\&so=d\&rm=\&rg=25\&sc=0} is shown in Table \ref{tab:spires}:
+\end{itemize}
+
+\section{Summary of CV}
+\input{src3/CV.tex}
+\section{Most relevant merits}
+\subsection{Publications}
+\input{src3/TenYear.tex}
+\subsection{Participation in research grants}
+\begin{itemize}
+
+\item {\bf AdG/ERC number 339787}: This is an advanced grant of the ERC, granted to the researcher in 2013, with starting date in February 2014. Its goal is to co-fund the construction of the NEXT experiment (it fully finances the first stage of the experiment, the NEW detector). 
+% 
+\item {\bf FIS2012-37947-C04-01}: This is a MINECO coordinated project involving IFIC (Valencia),  UPV (Valencia) and UAM (Madrid) to fund the participation of our groups in NEXT. The researcher is the coordinator of the project, which involves about 0.5 M\euro.
+%%
+\item {\bf Project Consolider-Ingenio 2010 CUP} (CSD2008-0037), 2009--2013: This project was awarded by the Spanish MICINN to kick-start the NEXT experiment. The funding was 5 M\euro. It involved 7 institutes and about 40 physicists. 
+%%
+\item {\bf FPA2009-2011 13697-C04-04}: This is a MICINN coordinated project to fund the participation of several spanish groups in NEXT and T2K. The researcher was the coordinator of the project, which involved about 1 M\euro.
+%%
+\item {\bf LAGUNA-LBNO}: This is a European grant whose ultimate goal is the design of a large underground neutrino facility in Europe. The funding of the project is 60 k\euro. The researcher is the IP of the project. 
+\end{itemize}
+%
+\subsection{Patents}
+The NEXT project may originate a number of patents, related wit the new technologies currently being developed by the collaboration.
+
+\subsection{International committees}
+%
+The researcher served for three years in the LHC Committee (LHCC, 2001-2004). He has been involved in the organisation of the \textit{Neutrino Factory Conference series (NuFact)} almost since its beginning. He has been nominated a member of the International Advisory Panel of the two most important conferences of his field, Weak Interactions and Neutrinos (WIN2013) and Neutrino (Neutrino2014). 
+
+\subsection{International schools}
+The researcher teaches regularly in numerous international schools, notably at the CERN Summer Student Programme (2004--2009), the 
+Neutrino Factory Schools editions in KEK (2007), Benasque (2008), Fermilab (2009) and Geneva (2011), and at the ISAPP schools at
+Gran Sasso (2012) and Canfranc (2013). In 2014 he has taught at the prestigious International Neutrino Summer School 2014 in St. Andrews and at the Gran Sasso Summer Institute. He was the organiser and chair of the Neutrino Summer School in Benasque (2008).
+
+\subsection{Invited talks}
+The researcher has presented numerous invited talks during his career. The most recent are: 
+(1) {\em The NEXT experiment}, in ``The art of Experiment'', LBNL, California, May 3, 2014\footnote{http://nygrensymposium2014.lbl.gov}. 
+(2) \textit{Ettore Majorana through the looking glass (searching for neutrinoless double beta decay)}, Harvard Monday Colloquium, 22 October 2012; Fermilab Colloquium, 24 October, 2012; University of Wisconsin Madison seminar, 26 October 2012, CERN colloquium, January, 2013.
+
+\subsection{Outreach}
+(1) He is the director of the science section of the cultural magazine {\em JotDown}, where he
+also keeps a widely read blog\footnote{http://www.jotdown.es/category/ciencias/fasterthanlight/}.
+(2) He published outreach articles, often interviewing scientific personalities such as Francis Halzen, PI of IceCube\footnote{http://www.jotdown.es/2014/05/francis-halzen-i-always-advise-to-my-students-dont-read-too-many-books-do-things/}, Dave Nygren (inventor of the TPC) and Alessandro Bettini (director of the Canfranc underground lab)\footnote{http://www.jotdown.es/2012/09/david-nygren-y-alessandro-bettini-the-physics-as-fountain-of-eternal-youth/}, among others. (3) He is the director of the scientific section of the JDB editorial brand. Among others, he has translated to spanish the book of G.F. Giudice ``Odyssey in the Zeptospace''. (4) He writes in numerous spanish cultural media, including the prestigious ``Review of books'', where he comments on scientific books and articles\footnote{http://www.revistadelibros.com/autores/428/juan-jose-gomez-cadenas}. (5) He gives numerous public lectures to the general public\footnote{http://www.jotdown.es/2014/07/paisaje-sin-neutrinos/}.  
+
+
+
+
+\end{document}
