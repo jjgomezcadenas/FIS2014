@@ -20,13 +20,26 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% HEADERS 
+%\setlength{\headheight}{1cm}
+%\setlength{\headsep}{0.5cm}
+%\pagestyle{fancyplain}
+%\fancyhf{}
+%\lhead{\fancyplain{}{\sc Short CV (CVA)}}
+%\rhead{\fancyplain{}{\sc J.J. G\'omez-Cadenas}}
+%\cfoot{\thepage}
+%\renewcommand{\headrulewidth}{0pt} % remove lines
+%\renewcommand{\footrulewidth}{0pt}
+
+%%% HEADER
 \setlength{\headheight}{1cm}
+%\setlength{\headwidth}{20cm}
 \setlength{\headsep}{0.5cm}
 \pagestyle{fancyplain}
+\fancyheadoffset[HR,HL]{2cm}
 \fancyhf{}
-\lhead{\fancyplain{}{\sc Short CV (CVA)}}
-\rhead{\fancyplain{}{\sc J.J. G\'omez-Cadenas}}
-\cfoot{\thepage}
+\lhead{\raisebox{-0.4\height}{\includegraphics[height=0.9cm,keepaspectratio=true]{img/miniLogo}}}
+\rhead{\fancyplain{}{\fontsize{10}{12} \selectfont \textbf{\underline{CURRíCULUM ABREVIADO (CVA)}}}}
+%\cfoot{\thepage\, / parte A}
 \renewcommand{\headrulewidth}{0pt} % remove lines
 \renewcommand{\footrulewidth}{0pt}
 
@@ -49,16 +62,27 @@
 \bibliography{biblio}
 \begin{document}
 \input{src/Commands.tex}
-
-\begin{center}
-{\Large \textsf{Currículum Abreviado (Short CV)--- CVA}} \\ \vspace{0.3cm}
-{\Large  \textsf{Juan José Gómez Cadenas}} \\ 
-{\Large \textsf{25-Sept-2014}} 
-\end{center}
+%
+%\begin{center}
+%{\Large \textsf{Currículum Abreviado (Short CV)--- CVA}} \\ \vspace{0.3cm}
+%{\Large  \textsf{Juan José Gómez Cadenas}} \\ 
+%{\Large \textsf{25-Sept-2014}} 
+%\end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% HEADING AN\begin{document}
+\begin{table}[h!]
+\begin{flushright}
+\begin{tabular}{|l|c|}
+\hline
+Date CVA & 25/09/2014\\
+\hline
+\end{tabular}
+\label{tab:DATE}
+\end{flushright}
+\end{table} 
 \section{Personal data}
+
 \begin{table}[h!]
 \begin{center}
 %\caption{Personal data}
