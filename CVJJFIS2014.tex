@@ -15,6 +15,7 @@
 \usepackage{mathptmx}
 \usepackage[T1]{fontenc}
 \usepackage{hyperref}
+\usepackage{lastpage}
 
 
 
@@ -62,6 +63,8 @@
 \bibliography{biblio}
 \begin{document}
 \input{src/Commands.tex}
+
+\cfoot{\fancyplain{}{\thepage\, de \pageref{LastPage}}}
 %
 %\begin{center}
 %{\Large \textsf{Currículum Abreviado (Short CV)--- CVA}} \\ \vspace{0.3cm}
@@ -71,20 +74,21 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% HEADING AN\begin{document}
+
 \begin{table}[h!]
 \begin{flushright}
 \begin{tabular}{|l|c|}
 \hline
-Date CVA & 25/09/2014\\
+ \textbf{Fecha del CVA/ Date of CVA} & 25/09/2014\\
 \hline
 \end{tabular}
 \label{tab:DATE}
 \end{flushright}
 \end{table} 
-\section{Personal data}
-
+%\section{Personal data}
+ \noindent\textbf{Parte A. DATOS PERSONALES / PERSONAL DATA}
 \begin{table}[h!]
-\begin{center}
+\begin{flushleft}
 %\caption{Personal data}
 \begin{tabular}{| l | l | l | l |}
 \hline
@@ -97,12 +101,12 @@ Researcher ID &  L-2003-2014 &  Orcid ID &  http://orcid.org/0000-0002-8224-7714
 \hline
 \end{tabular}
 \label{tab:personal}
-\end{center}
+\end{flushleft}
 \end{table} 
 
-\subsection{Academic data}
+ \noindent\textbf{A.1 Situación profesional actual / Professional status}
 \begin{table}[h!]
-\begin{center}
+\begin{flushleft}
 %\caption{Professional data}
 \begin{tabular}{| l | l | l | l |}
 \hline
@@ -120,12 +124,12 @@ Phone & 654213611 & e-mail & gomez@mail.cern.ch\\
 \hline
 \end{tabular}
 \label{tab:profesional}
-\end{center}
+\end{flushleft}
 \end{table} 
 
-\subsection{Professional data}
+\noindent\textbf{A.2. Formación académica / Academic degrees}
 \begin{table}[h!]
-\begin{center}
+\begin{flushleft}
 %\caption{Professional data}
 \begin{tabular}{| l | l | l | }
 \hline
@@ -136,17 +140,17 @@ Ph.D. in Physics & University of Valencia & 1987 \\
 \hline
 \end{tabular}
 \label{tab:academic}
-\end{center}
+\end{flushleft}
 \end{table} 
 
-\subsection{Indicators of scientific production}
+\noindent\textbf{A.3. Indicadores generales de la calidad de la producción científica/ Indicators of scientific production}
 
 \begin{table}[h!]
 \begin{center}
 \caption{Citations according to SPIRES data base}
 \begin{tabular}{| l | l | l | }
 \hline
-Cittation summary results & Citable papers & Citable and published\\
+Citation summary results & Citable papers & Citable and published\\
 \hline
 Total number of papers analysed &	253	&215\\
 Total number of citations &	18,243	& 17,257 \\
@@ -165,16 +169,23 @@ h index &63 &	61\\
 
 \begin{itemize}
 \item {\bf Number of research 6-years steps (sexenios) }: 4 out of 4. The last approved period was 2004-2009. 
-\item {\bf Ph.D. thesis advised}: The researcher has supervised a total of 11 Ph.D. students: De Fez (94), Lozano (95), Hernando (98), Cervera (02), Vidal (03), Burguet (08), Tornero (08), Novella (09), Catala (14) Martin-Albo (14) and Monrabal (14), six of whom have presented their thesis in the last 10 years (3 of them in 2014): De Fez, Lozano, Hernando and Cervera have obtained academic positions (Emirates, Granada, U. of Santiago and Valencia). Novella has been a Marie Curie fellow and has obtained a R\&C in 2014. Burguet works in a software company developing Internet products and Tornero has a permanent position in medical physics (radiotherapy). Catala and Vidal have continued their career as teachers. Martin-Albo and Monrabal will take post-doc position in the US in 2015 (Texas U. and Fermilab). 
 \item{\bf Citations:} The data, according to the SPIRES database\footnote{inspirehep.net/search?ln=en\&ln=en\&p=find+a+gomez+cadenas++or+gomez+y+cadenas+or+gomez-cadenas+or+cadenas\&of=hcs\&action\_search=Search\&sf=earliestdate\&so=d\&rm=\&rg=25\&sc=0} is shown in Table \ref{tab:spires}:
 \end{itemize}
 
-\section{Summary of CV}
+\noindent\textbf{Parte B. RESUMEN LIBRE DEL CURRÍCULUM / SUMMARY OF CV }
+
 \input{src3/CV.tex}
-\section{Most relevant merits}
-\subsection{Publications}
+\vspace{12pt}
+
+\noindent\textbf{Parte C. MÉRITOS MÁS RELEVANTES / MOST RELEVANT MERITS}
+
+\vspace{6pt}
+\noindent\textbf{C.1. Publicaciones/ Publications}
+
 \input{src3/TenYear.tex}
-\subsection{Participation in research grants}
+
+\vspace{6pt}
+\noindent\textbf{C.2. Proyectos / Research grants}
 \begin{itemize}
 
 \item {\bf AdG/ERC number 339787}: This is an advanced grant of the ERC, granted to the researcher in 2013, with starting date in February 2014. Its goal is to co-fund the construction of the NEXT experiment (it fully finances the first stage of the experiment, the NEW detector). 
@@ -185,32 +196,57 @@ h index &63 &	61\\
 %%
 \item {\bf FPA2009-2011 13697-C04-04}: This is a MICINN coordinated project to fund the participation of several spanish groups in NEXT and T2K. The researcher was the coordinator of the project, which involved about 1 M\euro.
 %%
-\item {\bf LAGUNA-LBNO}: This is a European grant whose ultimate goal is the design of a large underground neutrino facility in Europe. The funding of the project is 60 k\euro. The researcher is the IP of the project. 
+\item {\bf LAGUNA-LBNO FP7-INFRASTRUCTURES-2011-1 Grant Agreement 284518}: This is a European grant whose ultimate goal is the design of a large underground neutrino facility in Europe, active from 1/09/2011 to 31/08/2014. The funding of the project is 54,000 \euro (for CSIC). The researcher is the IP of the project. 
 \end{itemize}
 %
-\subsection{Patents}
+\vspace{6pt}
+
+\noindent\textbf{C.3. Contratos /Contracts}
+
+IDC-20101075 “ Experimento de Neutrinos con una cámara de proyección temporal en el tiempo de Xenon- Trinos Vacuum- Projects S.L. PI Juan José Gómez Cadenas( IFIC- CSIC) Initial date 01/09/2010 to 31/12/2012- CDTI Grant 187.000. Total amount 267.000 €.
+
+\vspace{6pt}
+
+\noindent\textbf{C.4. Patentes / Patents}
+
 The NEXT project may originate a number of patents, related wit the new technologies currently being developed by the collaboration.
 
-\subsection{International committees}
-%
+\vspace{6pt}
+
+\noindent\textbf{C.5. Dirección de trabajos / Advising of students}
+
+The researcher has supervised a total of 11 Ph.D. students: De Fez (94), Lozano (95), Hernando (98), Cervera (02), Vidal (03), Burguet (08), Tornero (08), Novella (09), Catala (14) Martin-Albo (14) and Monrabal (14), six of whom have presented their thesis in the last 10 years (3 of them in 2014): De Fez, Lozano, Hernando and Cervera have obtained academic positions (Emirates, Granada, U. of Santiago and Valencia). Novella has been a Marie Curie fellow and has obtained a R\&C in 2014. Burguet works in a software company developing Internet products and Tornero has a permanent position in medical physics (radiotherapy). Catala and Vidal have continued their career as teachers. Martin-Albo and Monrabal will take post-doc position in the US in 2015 (Texas U. and Fermilab). 
+
+\vspace{6pt}
+
+\noindent\textbf{C.6. International committees}
+
 The researcher served for three years in the LHC Committee (LHCC, 2001-2004). He has been involved in the organisation of the \textit{Neutrino Factory Conference series (NuFact)} almost since its beginning. He has been nominated a member of the International Advisory Panel of the two most important conferences of his field, Weak Interactions and Neutrinos (WIN2013) and Neutrino (Neutrino2014). 
 
-\subsection{International schools}
+\vspace{6pt}
+
+\noindent\textbf{C.7. International schools}
+
 The researcher teaches regularly in numerous international schools, notably at the CERN Summer Student Programme (2004--2009), the 
 Neutrino Factory Schools editions in KEK (2007), Benasque (2008), Fermilab (2009) and Geneva (2011), and at the ISAPP schools at
 Gran Sasso (2012) and Canfranc (2013). In 2014 he has taught at the prestigious International Neutrino Summer School 2014 in St. Andrews and at the Gran Sasso Summer Institute. He was the organiser and chair of the Neutrino Summer School in Benasque (2008).
 
-\subsection{Invited talks}
+\vspace{6pt}
+
+\noindent\textbf{C.8. Invited talks}
+
 The researcher has presented numerous invited talks during his career. The most recent are: 
 (1) {\em The NEXT experiment}, in ``The art of Experiment'', LBNL, California, May 3, 2014\footnote{http://nygrensymposium2014.lbl.gov}. 
 (2) \textit{Ettore Majorana through the looking glass (searching for neutrinoless double beta decay)}, Harvard Monday Colloquium, 22 October 2012; Fermilab Colloquium, 24 October, 2012; University of Wisconsin Madison seminar, 26 October 2012, CERN colloquium, January, 2013.
 
-\subsection{Outreach}
+\vspace{6pt}
+
+\noindent\textbf{C.9. Outreach}
+
 (1) He is the director of the science section of the cultural magazine {\em JotDown}, where he
 also keeps a widely read blog\footnote{http://www.jotdown.es/category/ciencias/fasterthanlight/}.
-(2) He published outreach articles, often interviewing scientific personalities such as Francis Halzen, PI of IceCube\footnote{http://www.jotdown.es/2014/05/francis-halzen-i-always-advise-to-my-students-dont-read-too-many-books-do-things/}, Dave Nygren (inventor of the TPC) and Alessandro Bettini (director of the Canfranc underground lab)\footnote{http://www.jotdown.es/2012/09/david-nygren-y-alessandro-bettini-the-physics-as-fountain-of-eternal-youth/}, among others. (3) He is the director of the scientific section of the JDB editorial brand. Among others, he has translated to spanish the book of G.F. Giudice ``Odyssey in the Zeptospace''. (4) He writes in numerous spanish cultural media, including the prestigious ``Review of books'', where he comments on scientific books and articles\footnote{http://www.revistadelibros.com/autores/428/juan-jose-gomez-cadenas}. (5) He gives numerous public lectures to the general public\footnote{http://www.jotdown.es/2014/07/paisaje-sin-neutrinos/}.  
-
-
+(2) He publishes outreach articles, often interviewing scientific personalities such as Francis Halzen, PI of IceCube\footnote{http://www.jotdown.es/2014/05/francis-halzen-i-always-advise-to-my-students-dont-read-too-many-books-do-things/}, Dave Nygren (inventor of the TPC) and Alessandro Bettini (director of the Canfranc underground lab)\footnote{http://www.jotdown.es/2012/09/david-nygren-y-alessandro-bettini-the-physics-as-fountain-of-eternal-youth/}, among others. (3) He is the director of the scientific section of the JDB editorial brand. Among others, he has translated to spanish the book of G.F. Giudice ``Odyssey in the Zeptospace''. (4) He writes in numerous spanish cultural media, including the prestigious ``Review of books'', where he comments on scientific books and articles\footnote{http://www.revistadelibros.com/autores/428/juan-jose-gomez-cadenas}. (5) He gives numerous public lectures to the general public\footnote{
+http://www.jotdown.es/2014/07/paisaje-sin-neutrinos/}.  
 
 
 \end{document}

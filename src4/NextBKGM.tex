@@ -1,0 +1,101 @@
+
+\section{NEXT background model and expected sensitivity}
+
+The NEXT background model describes the sources of radioactive contaminants in the detector and their activity. It allows us, via detailed simulation, to predict the background events that can be misidentified as signal and consequently, to predict the expected
+sensitivity of the apparatus. A major goal of NEW is to confirm these predictions from the data themselves
+
+\subsection{Sources of background}
+
+\subsubsection*{Radioactive contaminants in detector materials}
+
+After the decay of \BI, the daughter isotope, \Po, emits a number of de-excitation gammas with energies above 2.3 MeV. The gamma line at 2447 keV, of intensity 1.57\%, is very close to the $Q$-value of \XE. The gamma lines above \Qbb\ have low intensity and their contribution is negligible. 
+
+The daughter of \TL, \Pb, emits a de-excitation photon of 2614 keV with a 100\% intensity. The Compton edge of this gamma is at 2382 keV, well below \Qbb. However, the scattered gamma can interact and produce other electron tracks close enough to the initial Compton electron so they are reconstructed as a single object falling in the energy region of interest (ROI). Photoelectric electrons are produced above the ROI but can loose energy via bremsstrahlung and populate the window, in case the emitted photons escape out of the detector. Pair-creation events are not able to produce single-track events in the ROI. 
+
+\subsubsection*{Radon}
+Radon constitutes a dangerous source of background due to the radioactive isotopes $^{222}$Rn (half-life of 3.8\,d) from the $^{238}$U chain and $^{220}$Rn (half-life of 55\,s) from the $^{232}$Th chain. As a gas, it diffuses into the air and can enter the detector. \BI\ is a decay product of $^{222}$Rn, and \TL\ a decay product of $^{220}$Rn. In both cases, radon undergoes an alpha decay into polonium, producing a positively charged ion which is drifted towards the cathode by the electric field of the TPC.  As a consequence, $^{214}$Bi and $^{208}$Tl contaminations can be assumed to be deposited on the cathode surface. Radon may be eliminated from the TPC gas mixture by recirculation through appropriate filters. There are also ways to suppress radon in the volume defined by the shielding. Radon control is a major task for a \bbonu\ experiment, and will be of uppermost importance for NEXT-100. A major goal of NEW is to assess (and eventually improve) the effectiveness of radon control techniques. 
+
+\subsubsection*{Cosmic rays and laboratory rock backgrounds}
+Cosmic particles can also affect our experiment by producing high energy photons or activating materials. This is the reason why double beta decay experiments are conducted deep underground. At these depths, muons are the only surviving cosmic ray particles, but 
+their interactions with the rock produce neutrons and electromagnetic showers. Furthermore, the rock of the laboratory itself is a rather intense source of \TL\ and \BI\ backgrounds as well as neutrons.
+
+The flux of photons emanating from the LSC walls is (see our TDR and references therein):
+\begin{itemize}
+\item $0.71 \pm 0.12~{\gamma/\mathrm{cm}^2/\mathrm{s}}$~from the  $^{238}$U chain.
+\item $0.85 \pm 0.07~{\gamma/\mathrm{cm}^2/\mathrm{s}}$~from the $^{232}$Th chain.
+\end{itemize}
+
+These measurements include all the emissions in each chain. The flux corresponding to the \TL\ line at 2614.5 keV and the flux corresponding to the \BI\ line at 1764.5 keV were also measured (from the latter it is possible to deduce the flux corresponding to the 2448 keV line). The results are:
+\begin{itemize}
+\item $0.13 \pm 0.01~{\gamma/\mathrm{cm}^2/\mathrm{s}}$~from the \TL\ line.
+\item $0.006 \pm 0.001~{\gamma/\mathrm{cm}^2/\mathrm{s}}$~from the \BI\ line at 2448 keV. 
+\end{itemize}
+
+The above backgrounds are considerably reduced by the shielding. In addition, given the topological capabilities of NEXT, the residual muon and neutron background do not appear to be significant
+for our experiment. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Radioactive budget of NEXT-100}\label{sec:rabudget}
+
+Information on the radiopurity of the materials expected to be used in
+the construction of NEXT-100 has been compiled, performing specific
+measurements and also examining data from the literature for materials
+not yet screened. A detailed description is presented in \footcite{Alvarez:2012as}. A brief summary of the results presented there for the main materials is shown in Table \ref{tab:RA}\footnote{ICS means Internal Copper Shield; PV refers to the pressure vessel; FC to the field cage and EP to the energy plane.}
+%%%%%%%%%%
+\begin{table}
+\caption{Activity (in ${\rm mBq}/{\rm kg}$) of the most relevant materials used in NEXT.} \label{tab:RA}
+\begin{center}
+\begin{tabular}{lllll}
+\hline
+Material & Subsystem &$^{238}$U & $^{232}$Th & Ref. \\  
+\hline
+Lead  & Shielding & 0.37 & 0.07  & \footcite{Alvarez:2012as}\\
+
+Copper & ICS & $<0.012$ & $<0.004$  & \footcite{Alvarez:2012as}\\
+
+Steel (316Ti) & PV  & $<0.57$ & $<0.54$  & \footcite{Alvarez:2012as}\\
+
+Polyethylene & FC &  0.23 & $<0.14$ & \footcite{Aprile:2011ru} \\
+
+PMT (R11410-MOD per pc) & EP &  $< 2.5$ & $< 2.5$ & \footcite{Aprile:2011ru} \\
+\hline
+
+\end{tabular}  
+\end{center}
+\end{table} 
+%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Expected background rate}
+The only relevant backgrounds for NEXT are the photons emitted by the \TL\ line (2614.5 keV) and the \BI\ line (2448 keV). These sit very near \Qbb\ and the interaction of the photons in the gas can fake the \bbonu\ signal. NEXT-100 has the structure of a Matryoshka (a Russian nesting doll). The flux of gammas emanating from the LSC walls is drastically attenuated by the lead castle, and the residual flux, together with that emitted by the lead castle itself and the materials of the pressure vessel is further attenuated by the inner copper shielding. One then needs to add the contributions of the ``inner elements'' in NEXT: field cage, energy plane, and the elements of the tracking plane not shielded by the ICS.
+
+A detailed Geant4 \footcite{Agostinelli2003250} simulation of the NEXT-100 detector was written in order to compute the background rejection factor achievable with the detector. Simulated events, after reconstruction, were accepted as a \bbonu\ candidate if
+\begin{enumerate}
+\item[(a)] they were reconstructed as a single track confined within the active volume;
+\item[(b)] their energy fell in the region of interest, defined as $\pm 0.5$ FWHM around \Qbb; 
+\item[(c)] the spatial pattern of energy deposition corresponded to that of a \bbonu\ track (\emph{blobs} in both ends).
+\end{enumerate}
+
+The achieved background rejection factor together with the selection efficiency for the signal are shown in Table \ref{tab:RF}. As can be seen, the cuts suppress the radioactive background by more than 7 orders of magnitude. This results in an estimated background rate of about $4\times10^{-4}~\ckky$.
+
+%%%%%%%%%%
+\begin{table}
+\caption{Acceptance of the selection cuts for signal and backgrounds.}
+\label{tab:RF}
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+ & \multicolumn{3}{c}{Fraction of events} \\
+Selection cut & \bbonu\ & \BI\ & \TL\ \\ \midrule 
+Confined, single track & 0.48 & $6.0\times10^{-5}$ & $2.4 \times 10^{-3}$ \\
+Energy ROI & 0.33 & $2.2\times10^{-6}$ & $1.9 \times 10^{-6}$ \\
+Topology \bbonu\ & 0.25 & $1.9\times10^{-7}$ & $1.8 \times 10^{-7}$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}%
+%%%%%%%%%%
+\subsection{Discovery potential of NEXT-100.}
+
+The excellent resolution of NEXT (0.5 \% FWHM), and the combination of a low radioactive budget with a topological signature (which yields an expected background rate of $4 \times 10^{-4} \ckky$), will allow the NEXT-100 detector to reach a sensitivity to the \bbonu\ period of $\Tonu > 7 \times 10^{25}$~yr for a exposure of 300 kg$\cdot$yr. This translates into a \mbb\ sensitivity range as low as $[67-187]$~meV, depending on the NME. Therefore NEXT-100 will have a substantial chance of making a discovery if the NME is sufficiently high (see Fig.~\ref{fig.mbb}).
