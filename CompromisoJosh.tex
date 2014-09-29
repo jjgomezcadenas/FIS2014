@@ -1,0 +1,90 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,11pt,oneside]{article}
+\usepackage[a4paper,vmargin={1.5cm,1.5cm},width=16cm]{geometry}
+\usepackage{microtype}
+\usepackage[style=verbose-inote,doi=false,sortcites=true,block=space,backend=bibtex]{biblatex}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage[spanish]{babel}
+\usepackage{microtype}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{eurosym}
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{lastpage}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% HEADERS 
+%\setlength{\headheight}{1cm}
+%\setlength{\headsep}{0.5cm}
+%\pagestyle{fancyplain}
+%\fancyhf{}
+%\lhead{\fancyplain{}{\sc Short CV (CVA)}}
+%\rhead{\fancyplain{}{\sc J.J. G\'omez-Cadenas}}
+%\cfoot{\thepage}
+%\renewcommand{\headrulewidth}{0pt} % remove lines
+%\renewcommand{\footrulewidth}{0pt}
+
+%%% HEADER
+\setlength{\headheight}{1cm}
+%\setlength{\headwidth}{20cm}
+\setlength{\headsep}{0.5cm}
+\pagestyle{fancyplain}
+\fancyheadoffset[HR,HL]{2cm}
+\fancyhf{}
+\lhead{\raisebox{-0.4\height}{\includegraphics[height=0.9cm,keepaspectratio=true]{img/miniLogo}}}
+\rhead{\fancyplain{}{\fontsize{10}{12} \selectfont \textbf{\underline{Compromiso de vinculación}}}}
+%\cfoot{\thepage\, / parte A}
+\renewcommand{\headrulewidth}{0pt} % remove lines
+\renewcommand{\footrulewidth}{0pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Hack to make math formulas bold in section titles
+\makeatletter
+\DeclareRobustCommand*{\bfseries}{%
+  \not@math@alphabet\bfseries\mathbf
+  \fontseries\bfdefault\selectfont
+  \boldmath
+}
+\makeatother
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\thesection{\bf \textsf{\alph{section}}}
+%\def\thesubsection{\alph{subsection}}
+\def\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\bibliography{biblio}
+\begin{document}
+\input{src/Commands.tex}
+
+\cfoot{\fancyplain{}{\thepage\, de \pageref{LastPage}}}
+%
+%\begin{center}
+%{\Large \textsf{Currículum Abreviado (Short CV)--- CVA}} \\ \vspace{0.3cm}
+%{\Large  \textsf{Juan José Gómez Cadenas}} \\ 
+%{\Large \textsf{25-Sept-2014}} 
+%\end{center}
+
+Juan José Gómez Cadenas, profesor de investigación del CSIC y co-IP de este proyecto de investigación (en lo sucesivo el IP) declara: 
+
+\begin{itemize}
+
+\item Ser el investigador principal del proyecto europeo {\bf AdG/ERC, 339787}: se trata de un advanced grant de la ERC, con fecha de inicio en Febrero, 2014 y extensión por cinco años.  
+% 
+\item Disponer de fondos suficientes en dicho proyecto para garantizar la vinculación del investigador Josh Renner, con NIE Y3623479G, al proyecto durante cuatro años, tal como se solicita en esta convocatoria.  En concreto, el Dr. Renner está contratado actualmente por la Universidad de Valencia, UV (contrato de doctor junior). El importe de su salario, durante cuatro años, asciende a un máximo de 150,000 euros. El apartado reservado a personal CSIC, según consta en el ``Documento de Trabajo'' (DOW) que obra en poder de la administración CSIC, especifica un total de 753,735 euros en concepto de salarios, cantidad que cubre ampliamente el contrato del Dr. Renner.
+\end{itemize}
+%
+
+En consecuencia, el IP {\bf se compromete} a reservar los fondos para garantizar la   vinculación del Dr. Renner con la UV durante la duración de este proyecto de investigación. 
+
+
+Firmado: Juan José Gómez Cadenas
+
+\end{document}
