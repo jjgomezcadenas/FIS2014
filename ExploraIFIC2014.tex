@@ -1,0 +1,215 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,11pt,oneside]{article}
+\usepackage[a4paper,vmargin={1.5cm,1.5cm},width=16cm]{geometry}
+\usepackage[style=verbose-inote,doi=false,sortcites=true,block=space,backend=bibtex]{biblatex}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage[spanish]{babel}
+\usepackage{microtype}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{eurosym}
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+%% Added to help mimic structure.
+\usepackage{tcolorbox}
+\usepackage{soul}
+\usepackage{color}
+\usepackage{lastpage}
+\usepackage{multirow}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% HEADERS
+%\setlength{\headheight}{1cm}
+%\setlength{\headsep}{0.5cm}
+%\pagestyle{fancyplain}
+%\fancyhf{}
+%\lhead{\fancyplain{}{\sc Memoria científico técnica de proyectos coordinados}}
+%\rhead{\fancyplain{}{\sc Parte A}}
+%\cfoot{\thepage}
+%\renewcommand{\headrulewidth}{0pt} % remove lines
+%\renewcommand{\footrulewidth}{0pt}
+
+
+%%% HEADER
+\setlength{\headheight}{1cm}
+%\setlength{\headwidth}{20cm}
+\setlength{\headsep}{0.5cm}
+\pagestyle{fancyplain}
+\fancyheadoffset[HR,HL]{2cm}
+\fancyhf{}
+\lhead{\raisebox{-0.4\height}{\includegraphics[height=0.9cm,keepaspectratio=true]{img/miniLogo}}}
+\chead{\fancyplain{}{\fontsize{10}{12} \selectfont \textbf{\underline{MEMORIA CIENTÍFICO-TÉCNICA DE PROYECTOS EXPLORA}}}}
+\cfoot{\thepage\, / parte A}
+\renewcommand{\headrulewidth}{0pt} % remove lines
+\renewcommand{\footrulewidth}{0pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Hack to make math formulas bold in section titles
+\makeatletter
+\DeclareRobustCommand*{\bfseries}{%
+  \not@math@alphabet\bfseries\mathbf
+  \fontseries\bfdefault\selectfont
+  \boldmath
+}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\thesection{\bf \textsf{\Alph{section}}}
+
+%\nobibliography{biblio}
+%\bibliographystyle{JHEP}
+
+\bibliography{biblio}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%% Some useful definitions
+\input{src/Commands.tex}
+
+%% Heading
+\begin{tcolorbox}[colback=white,arc=0pt,outer arc=0pt,colframe=black,boxrule=0.6pt]
+\begin{center}
+Convocatorias 2014\\ 
+Proyectos ``Explora Ciencia'' y  ``Explora Tecnología" \\ 
+Dirección General de Investigación Científica y Técnica \\
+Subdirección General de Proyectos de Investigación
+\end{center} 
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=yellow,arc=0pt,outer arc=0pt,colframe=black,boxrule=0.6pt,left=0mm,right=0mm]
+  \begin{center}
+    AVISO IMPORTANTE\\
+  \end{center}
+    En virtud del art\'iculo 11 de la convocatoria \ul{\textbf{NO SE ACEPTAR\'AN NI SER\'AN SUBSABABLES MEMORIAS CIENT\'IFICO-T\'ECNICAS}} que no se presenten en este formato.\\
+    \\
+    \textbf{Lea detenidamente las instrucciones que figuran al final de este documento para rellenar correctamente la memoria cient\'ifico-t\'ecnica.}
+    \\
+  %\end{center}
+\end{tcolorbox}
+\vspace{3pt}
+\begin{tcolorbox}[colback=yellow,arc=0pt,outer arc=0pt,colframe=black,boxrule=0.6pt,left=0mm]
+  \noindent\textbf{Parte A: RESUMEN DE LA PROPUESTA/SUMMARY OF THE PROPOSAL}
+  %\section{RESUMEN DE LA PROPUESTA/SUMMARY OF THE PROPOSAL}
+\end{tcolorbox}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{RESUMEN DE LA PROPUESTA/SUMMARY OF THE PROPOSAL}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\subsection{DATOS DEL PROYECTO COORDINADO}
+%\noindent\textbf{A.1. DATOS DEL PROYECTO COORDINADO}
+\vspace{6pt}
+
+\noindent\textbf{INVESTIGADOR  PRINCIPAL 1:} (Nombre y apellidos)
+
+\noindent Juan José Gómez Cadenas.
+\vspace{6pt}
+
+
+\noindent\textbf{TÍTULO DEL PROYECTO:} Demostración de una nueva técnica para la búsqueda de sucesos doble beta sin neutrinos basada en una cámara de proyección temporal de xenón a alta presión operando en un campo magnético  
+
+\vspace{6pt}
+
+\noindent\textbf{ACRÓNIMO:} BEXT.
+
+
+\noindent\textbf{RESUMEN} 
+{\color{blue}{M\'aximo 2000 caracteres (incluyendo espacios en blanco):}}
+\vspace{12pt}
+
+\input{src5/Resumen.tex}
+ 
+\vspace{12pt}
+
+\noindent\textbf{PALABRAS CLAVE:} neutrinos, TPC, HPXe, xenón, desintegración doble beta, Canfranc, alta presión, electroluminescencia, SiPM, resolución en energía, señal topológica, campo magnético. 
+
+\vspace{12pt}
+
+\noindent\textbf{TITLE:} Demonstration of a breakthrough technique to search for neutrino less double beta decays based in a time projection chamber operating in a magnetic field
+\vspace{6pt}
+
+\noindent\textbf{ACRONYM:} BEXT.
+\vspace{6pt}
+
+\noindent\textbf{SUMMARY} 
+\vspace{6pt}
+
+\input{src5/Summary.tex}
+
+ \vspace{12pt}
+
+\noindent\textbf{KEYWORDS:} neutrinos, TPC, HPXe, xenon, double beta decay, Canfranc, high pressure, electroluminescence, SiPM, energy resolution, topological signal, magnetic field. 
+
+ \vspace{12pt}
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\setcounter{page}{1}
+\cfoot{\fancyplain{}{\thepage\, / parte B}}
+
+\vspace{3pt}
+\begin{tcolorbox}[colback=yellow,arc=0pt,outer arc=0pt,colframe=black,boxrule=0.6pt,left=0mm]
+  \noindent\textbf{Parte B: AUTOEVALUACIÓN/SELF-EVALUATION}
+\end{tcolorbox}
+
+\input{src5/SelfEvaluation.tex}
+
+\newpage
+\setcounter{page}{1}
+\cfoot{\fancyplain{}{\thepage\, / parte C}}
+
+\vspace{6pt}
+\begin{tcolorbox}[colback=yellow,arc=0pt,outer arc=0pt,colframe=black,boxrule=0.6pt,left=0mm]
+  \noindent\textbf{Parte C: DOCUMENTO CIENTÍFICO / SCIENTIFIC DOCUMENT}
+  %\section{RESUMEN DE LA PROPUESTA/SUMMARY OF THE PROPOSAL}
+\end{tcolorbox}
+
+\vspace{12pt}
+
+\noindent\textbf{C.1. PROPUESTA CIENTÍFICA / SCIENTIFIC PROPOSAL}
+
+%\subsubsection*{\label{subsubsec:stateoftheart}Estado actual y antecedentes /  State-of-the-art and previous work}
+%
+\input{src5/ScientificProposal.tex}
+\vspace{12pt}
+
+\noindent\textbf{C.2. IMPACTO CIENTÍFICO Y/O SOCIO-ECONÓMICO DEL PROYECTO EN CASO DE TENER ÉXITO/ SCIENTIFIC IMPACT}
+
+The goal of this proposal is to demonstrate that the addition of a magnetic field to NEXT would improve its rejection factor by an additional order of magnitude, thus reducing the number of background events in the detector to one or less per ton. {\bf This would allow the experiment to fully explore the cosmologically relevant region, boosting dramatically the opportunity of a major discovery and would make NEXT the leading experiment in the field.}From the purely technological point of view, {\bf the demonstration of good operation of an array of SiPMs in a magnetic field} (both as energy-measuring and as tracking devices), {\bf opens new opportunities in the field of medical image, in particular in PET-MRI systems, which combine magnetic resonance imaging with positron-electron tomography}. Traditionally PET systems have been based in PMTs, which do not operate well in the magnetic fields created by MR systems. SiPMs would be an obvious replacement and this project would advance the needed experience in instrumentation. Our energy and tracking planes, including front-end electronics and data acquisition may find a straight application to this new field of medical imaging. Our plan includes working with the technology transfer group at IFIC to explore potential spin-offs of the technology. 
+
+
+\vspace{12pt}
+
+\noindent\textbf{C.3. PERSONAL INVESTIGADOR QUE PARTICIPARÁ EN EL PROYECTO Y DESCRIPCIÓN DEL PAPEL DE CADA UNO DE ELLOS/ PERSONNEL}
+\begin{enumerate}
+\item J.J. Gomez-Cadenas. PI. Overall coordination and supervision. Time at CERN. One week in Q1'16, 2 weeks during
+
+\item Javier Rodriguez. Electronics engineer. Designer of the SiPM KDBs and front-end electronics. Responsible of the construction of the energy and tracking plane.
+\item Vicente Álvarez. Electronics technical engineer. Support for the fabrication of the KDB and front-end electronics. 
+ \item Francesc Monrabal. Ph.D. in physics (November, 2014). DEMO commissioning and characterisation at IFIC. Participates in the data taking at CERN. Responsibility in slow control, monitoring, and data acquisition.
+\item Andrew Laing. Ph.D. in physics. Run coordinator at CERN. Responsibilities include: link with technical divisions at CERN for operation of TPC90 magnet, organisation of campaging, supervision of operations at CERN. 
+\item Justo Martin-Albo. Ph.D. in physics (December 2014). Overall software coordination, including data processing and transfer. Monte Carlo simulation of setup. Will participate in the data-taking campaign. 
+\item Paola Ferrario. Ph.D. in physics. General reconstruction algorithms, detector calibration. Will participate in the data-taking campaign. 
+\item Josh Renner. Ph.D. in physics. Reconstruction algorithms in magnetic field (Kalman Filter). Will participate in the data-taking campaign.
+\end{enumerate}
+
+To summarise, the tracking plane will be built by the two engineers in the team, detector commissioning and operation at IFIC and CERN will be the responsibility of Monrabal and Laing, software, reconstruction and data analysis will be carried out by Martin-Albo, Ferrario, and Renner, all under the supervision of the PI. 
+
+The project is clearly risky. We are exploring uncharted ground (no one has operated a high-pressure chamber xenon TPC read only by SiPMs in an intense field before), and we propose a very fast program. On the other hand, we can reuse a very sophisticated detector (DEMO) which is very well understood by our group for this measurement, and we also have access to a major CERN infrastructures (the TPC90 magnet). In addition, our team is very experienced and motivated. The success of this project could be a fundamental milestone in the road to a major discovery. 
+ 
+\vspace{12pt}
+
+\noindent\textbf{C.5. IMPLICACIONES ÉTICAS Y/O DE BIOSEGURIDAD/ETHICS AND SAFETY IMPLICATIONS}
+
+None
+
+
+\end{document}
+

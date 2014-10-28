@@ -1,0 +1,104 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,11pt,oneside]{article}
+\usepackage[a4paper,vmargin={1.5cm,1.5cm},width=16cm]{geometry}
+\usepackage[style=verbose-inote,doi=false,sortcites=true,block=space,backend=bibtex]{biblatex}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage[spanish]{babel}
+\usepackage{microtype}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{eurosym}
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+%% Added to help mimic structure.
+\usepackage{tcolorbox}
+\usepackage{soul}
+\usepackage{color}
+\usepackage{lastpage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% HEADERS
+%\setlength{\headheight}{1cm}
+%\setlength{\headsep}{0.5cm}
+%\pagestyle{fancyplain}
+%\fancyhf{}
+%\lhead{\fancyplain{}{\sc Memoria científico técnica de proyectos coordinados}}
+%\rhead{\fancyplain{}{\sc Parte A}}
+%\cfoot{\thepage}
+%\renewcommand{\headrulewidth}{0pt} % remove lines
+%\renewcommand{\footrulewidth}{0pt}
+
+
+%%% HEADER
+\setlength{\headheight}{1cm}
+%\setlength{\headwidth}{20cm}
+\setlength{\headsep}{0.5cm}
+\pagestyle{fancyplain}
+\fancyheadoffset[HR,HL]{2cm}
+\fancyhf{}
+\lhead{\raisebox{-0.4\height}{\includegraphics[height=0.9cm,keepaspectratio=true]{src4/logo_next.jpg}}}
+\rhead{\fancyplain{}{\fontsize{10}{12} \selectfont \textbf{\underline{NEXT}}}}
+%\cfoot{\thepage\, / parte A}
+\renewcommand{\headrulewidth}{0pt} % remove lines
+\renewcommand{\footrulewidth}{0pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Hack to make math formulas bold in section titles
+\makeatletter
+\DeclareRobustCommand*{\bfseries}{%
+  \not@math@alphabet\bfseries\mathbf
+  \fontseries\bfdefault\selectfont
+  \boldmath
+}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\thesection{\bf \textsf{\Alph{section}}}
+
+%\nobibliography{biblio}
+%\bibliographystyle{JHEP}
+
+\bibliography{biblio}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%% Some useful definitions
+\input{src/Commands.tex}
+
+%% Heading
+\begin{tcolorbox}[colback=white,arc=0pt,outer arc=0pt,colframe=black,boxrule=0.6pt]
+\begin{center}
+\Large{\bf The NEXT experiment: status and prospects}\\ 
+The NEXT collaboration 
+\end{center} 
+\end{tcolorbox}
+%
+%\begin{tcolorbox}[colback=yellow,arc=0pt,outer arc=0pt,colframe=black,boxrule=0.6pt,left=0mm,right=0mm]
+%  \begin{center}
+%    AVISO IMPORTANTE\\
+%  \end{center}
+%    En virtud del art\'iculo 11 de la convocatoria \ul{\textbf{NO SE ACEPTAR\'AN NI SER\'AN SUBSABABLES MEMORIAS CIENT\'IFICO-T\'ECNICAS}} que no se presenten en este formato.\\
+%    \\
+%    \textbf{Lea detenidamente las instrucciones que figuran al final de este documento para rellenar correctamente la memoria cient\'ifico-t\'ecnica.}
+%    \\
+%  %\end{center}
+%\end{tcolorbox}
+%\vspace{3pt}
+%\begin{tcolorbox}[colback=yellow,arc=0pt,outer arc=0pt,colframe=black,boxrule=0.6pt,left=0mm]
+%  \noindent\textbf{Parte A: RESUMEN DE LA PROPUESTA/SUMMARY OF THE PROPOSAL}
+%  %\section{RESUMEN DE LA PROPUESTA/SUMMARY OF THE PROPOSAL}
+%\end{tcolorbox}
+
+
+\input{src4/NextStatus2014.tex}
+\input{src4/NextBKGM.tex}
+\input{src4/NextFuture.tex}
+
+\section{Conclusions}
+We have described the current status and the prospects of NEXT. The experimental technique is based in the use of high pressure xenon TPCs with EL readout\footcite{Nygren:2009zz}. The NEXT-100 detector implements such concept in an asymmetric TPC with PMT-based energy plane and SiPM-based tracking plane\footcite{Alvarez:2012haa}. The DEMO and DBDM prototypes have demonstrated excellent energy resolution and the robustness of the topological signature. The NEW apparatus, a 1:2 scale in size (1:8 scale in mass) of NEXT-100 will be commissioned at the LSC in 2015. The NEXT-100 detector will be commissioned at the LSC in 2017 and will reach a sensitivity in the range of 67 to 187 meV depending on the value of the NME, competitive with all other major experiments of the current generation. The technology of HPXe can be extrapolated to the ton scale, adding extra background rejection through two (not mutually exclusive) paths, namely: a) the addition of a magnetic field; b) barium tagging. In both cases, the resulting apparatus, BEXT, will be able to fully explore the inverse hierarchy. 
+\end{document}
+

@@ -1,0 +1,445 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,11pt,oneside]{article}
+\usepackage[a4paper,vmargin={1.5cm,1.5cm},width=16cm]{geometry}
+\usepackage[style=verbose-inote,doi=false,sortcites=true,block=space,backend=bibtex]{biblatex}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage[spanish]{babel}
+\usepackage{microtype}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{eurosym}
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+%% Added to help mimic structure.
+\usepackage{tcolorbox}
+\usepackage{soul}
+\usepackage{color}
+\usepackage{lastpage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% HEADERS
+%\setlength{\headheight}{1cm}
+%\setlength{\headsep}{0.5cm}
+%\pagestyle{fancyplain}
+%\fancyhf{}
+%\lhead{\fancyplain{}{\sc Memoria científico técnica de proyectos coordinados}}
+%\rhead{\fancyplain{}{\sc Parte A}}
+%\cfoot{\thepage}
+%\renewcommand{\headrulewidth}{0pt} % remove lines
+%\renewcommand{\footrulewidth}{0pt}
+
+
+%%% HEADER
+\setlength{\headheight}{1cm}
+%\setlength{\headwidth}{20cm}
+\setlength{\headsep}{0.5cm}
+\pagestyle{fancyplain}
+\fancyheadoffset[HR,HL]{2cm}
+\fancyhf{}
+\lhead{\raisebox{-0.4\height}{\includegraphics[height=0.9cm,keepaspectratio=true]{img/miniLogo}}}
+\rhead{\fancyplain{}{\fontsize{10}{12} \selectfont \textbf{\underline{Memoria científico técnica de proyectos coordinados}}}}
+\cfoot{\thepage\, / parte A}
+\renewcommand{\headrulewidth}{0pt} % remove lines
+\renewcommand{\footrulewidth}{0pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Hack to make math formulas bold in section titles
+\makeatletter
+\DeclareRobustCommand*{\bfseries}{%
+  \not@math@alphabet\bfseries\mathbf
+  \fontseries\bfdefault\selectfont
+  \boldmath
+}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\thesection{\bf \textsf{\Alph{section}}}
+
+%\nobibliography{biblio}
+%\bibliographystyle{JHEP}
+
+\bibliography{biblio}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%% Some useful definitions
+\input{src/Commands.tex}
+
+%% Heading
+\begin{tcolorbox}[colback=white,arc=0pt,outer arc=0pt,colframe=black,boxrule=0.6pt]
+\begin{center}
+Convocatorias 2014\\ 
+Proyectos de I+D ``Excelencia'' y Proyectos de I+D+I ``Retos Investigación" \\ 
+Dirección General de Investigación Científica y Técnica \\
+Subdirección General de Proyectos de Investigación
+\end{center} 
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=yellow,arc=0pt,outer arc=0pt,colframe=black,boxrule=0.6pt,left=0mm,right=0mm]
+  \begin{center}
+    AVISO IMPORTANTE\\
+  \end{center}
+    En virtud del art\'iculo 11 de la convocatoria \ul{\textbf{NO SE ACEPTAR\'AN NI SER\'AN SUBSABABLES MEMORIAS CIENT\'IFICO-T\'ECNICAS}} que no se presenten en este formato.\\
+    \\
+    \textbf{Lea detenidamente las instrucciones que figuran al final de este documento para rellenar correctamente la memoria cient\'ifico-t\'ecnica.}
+    \\
+  %\end{center}
+\end{tcolorbox}
+\vspace{3pt}
+\begin{tcolorbox}[colback=yellow,arc=0pt,outer arc=0pt,colframe=black,boxrule=0.6pt,left=0mm]
+  \noindent\textbf{Parte A: RESUMEN DE LA PROPUESTA/SUMMARY OF THE PROPOSAL}
+  %\section{RESUMEN DE LA PROPUESTA/SUMMARY OF THE PROPOSAL}
+\end{tcolorbox}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{RESUMEN DE LA PROPUESTA/SUMMARY OF THE PROPOSAL}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\subsection{DATOS DEL PROYECTO COORDINADO}
+\noindent\textbf{A.1. DATOS DEL PROYECTO COORDINADO}
+\vspace{6pt}
+
+\noindent\textbf{INVESTIGADOR COORDINADOR PRINCIPAL 1:} (Nombre y apellidos)
+
+\noindent Juan José Gómez Cadenas.
+\vspace{6pt}
+
+\noindent\textbf{INVESTIGADOR COORDINADOR PRINCIPAL 2:} (Nombre y apellidos)
+
+\noindent Michel Sorel
+\vspace{6pt}
+
+\noindent\textbf{TÍTULO GENERAL DEL PROYECTO COORDINADO:} Construcción operación e I+D+i para el experimento NEXT en el LSC.
+\vspace{6pt}
+
+\noindent\textbf{ACRÓNIMO DEL PROYECTO COORDINADO:} NEXT.
+
+
+\noindent\textbf{RESUMEN DEL PROYECTO COORDINADO} 
+{\color{blue}{M\'aximo 3500 caracteres (incluyendo espacios en blanco):}}
+\vspace{12pt}
+
+\input{src2/Resumen.tex}
+ 
+\vspace{12pt}
+
+\noindent\textbf{PALABRAS CLAVE DEL PROYECTO COORDINADO:} neutrinos, TPC, HPXe, xenón, desintegración doble beta, Canfranc, alta presión, electroluminescencia. 
+
+\vspace{12pt}
+
+\noindent\textbf{TITLE OF THE COORDINATED PROJECT:} Construction operation and R\&D for the NEXT experiment at the LSC. 
+\vspace{6pt}
+
+\noindent\textbf{ACRONYM OF THE COORDINATED PROJECT:} NEXT.
+\vspace{6pt}
+
+\noindent\textbf{SUMMARY OF THE COORDINATED PROJECT} 
+\vspace{6pt}
+
+\input{src2/Summary.tex}
+
+ \vspace{12pt}
+
+\noindent\textbf{KEYWORDS OF THE COORDINATED PROJECT:} neutrinos, TPC, HPXe, xenon, double beta decay, Canfranc, high pressure, electroluminescence. 
+
+ \vspace{12pt}
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\noindent\textbf{A.2. DATOS DE LOS SUBPROYECTOS/ DATA OF SUBPROJECTS }
+ \vspace{12pt}
+ 
+\noindent\textbf{SUBPROYECTO 1 / SUBPROJECT 1} (el investigador o investigadores principales son los coordinadores del proyecto coordinado)
+
+\vspace{6pt}
+\noindent\textbf{TÍTULO / TITLE :} Coordination of the NEXT project (COORD)
+%
+%\begin{itemize}
+%\item {\bf IP 1 / PI 1}: Juan José Gómez Cadenas (co-coordinator)
+%\item {\bf IP 2 / PI 2}: Michel Sorel (co-coordinator)
+%\item {\bf Título / Title}: Coordination of the NEXT project (COORD)
+%\end{itemize}
+
+ \vspace{12pt}
+ 
+\noindent\textbf{SUBPROYECTO 2 / SUBPROJECT 2}
+\vspace{6pt}
+
+\noindent\textbf{INVESTIGADOR PRINCIPAL 1 / PRINCIPAL RESEARCHER 1 } (nombre y apellidos)
+
+\vspace{6pt}
+\noindent Jos\'e F. Toledo
+
+\vspace{12pt}
+\noindent\textbf{INVESTIGADOR PRINCIPAL 2 / PRINCIPAL RESEARCHER 2} (nombre y apellidos)
+
+\vspace{6pt}
+\noindent Ra\'ul Esteve
+
+\vspace{6pt}
+\noindent\textbf{TÍTULO / TITLE :} Electronics and DAQ for NEXT
+
+\vspace{12pt}
+\noindent\textbf{SUBPROYECTO 3 / SUBPROJECT 3}
+\vspace{6pt}
+
+\noindent\textbf{INVESTIGADOR PRINCIPAL 1 / PRINCIPAL RESEARCHER 1 } (nombre y apellidos)
+
+\vspace{6pt}
+\noindent José A. Hernando Morata
+
+\vspace{6pt}
+\noindent\textbf{TÍTULO / TITLE :} Calibration and Reconstruction for NEXT (CALREC)
+
+\vspace{12pt}
+\noindent\textbf{SUBPROYECTO 4 / SUBPROJECT 4}
+\vspace{6pt}
+
+\noindent\textbf{INVESTIGADOR PRINCIPAL 1 / PRINCIPAL RESEARCHER 1 } (nombre y apellidos)
+
+\vspace{6pt}
+\noindent Alicia Vázquez
+
+\vspace{6pt}
+\noindent\textbf{TÍTULO / TITLE :} Barium Tagging (BATA)
+
+
+%\rhead{\fancyplain{}{\sc Parte B}}
+%\newpage
+%\setcounter{page}{1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\setcounter{page}{1}
+\cfoot{\fancyplain{}{\thepage\, / parte B}}
+
+%\section{INFORMACIÓN ESPECÍFICA DEL EQUIPO / TEAM INFORMATION}
+
+\begin{tcolorbox}[colback=yellow,arc=0pt,outer arc=0pt,colframe=black,boxrule=0.6pt,left=0mm]
+  \noindent\textbf{PARTE B: INFORMACIÓN ESPECÍFICA DEL EQUIPO / TEAM INFORMATION}
+  %\section{RESUMEN DE LA PROPUESTA/SUMMARY OF THE PROPOSAL}
+\end{tcolorbox}
+
+\vspace{12pt}
+\noindent\textbf{B.1 RELACIÓN DE LAS PERSONAS NO DOCTORES QUE COMPONEN EL EQUIPO DE TRABAJO / WORKING TEAM (MEMBERS WITHOUT PH.D) }
+\input{src2/RelacionNoDoctores.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\subsection{\label{subsec:Grants}FINANCIACIÓN PÚBLICA Y PRIVADA (PROYECTOS Y/O CONTRATOS DE I+D+I) DEL EQUIPO DE INVESTIGACIÓN / FUNDING OF RESEARCH TEAM}
+
+\noindent\textbf{B.2 FINANCIACIÓN PÚBLICA Y PRIVADA (PROYECTOS Y/O CONTRATOS DE I+D+I) DEL EQUIPO DE INVESTIGACIÓN / FUNDING OF RESEARCH TEAM}
+\vspace{12pt}
+
+\input{src2/Grants.tex}
+
+\newpage
+\setcounter{page}{1}
+\cfoot{\fancyplain{}{\thepage\, de \pageref{LastPage} / parte C}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{DOCUMENTO CIENTÍFICO / SCIENTIFIC DOCUMENT}
+
+\begin{tcolorbox}[colback=yellow,arc=0pt,outer arc=0pt,colframe=black,boxrule=0.6pt,left=0mm]
+  \noindent\textbf{Parte C: DOCUMENTO CIENTÍFICO / SCIENTIFIC DOCUMENT}
+  %\section{RESUMEN DE LA PROPUESTA/SUMMARY OF THE PROPOSAL}
+\end{tcolorbox}
+
+\vspace{12pt}
+
+\noindent\textbf{C.1. JUSTIFICACIÓN DE LA COORDINACIÓN / JUSTIFICATION OF THE COORDINATION}
+\vspace{12pt}
+
+\input{src2/Coordination.tex}
+
+\vspace{12pt}
+
+\noindent\textbf{C.2. PROPUESTA CIENTÍFICA / SCIENTIFIC PROPOSAL}
+
+\subsubsection*{\label{subsubsec:stateoftheart}Estado actual y antecedentes /  State-of-the-art and previous work}
+
+\input{src2/StateOfTheArt.tex}
+\input{src2/PreviousWork.tex}
+
+\subsubsection*{Objetivos generales y adecuación al Programa Estatal de I+D+i orientada a los Retos de la Sociedad / General objectives and match to the National Programme for research aimed at the Challenges of Society}
+
+\input{src2/Objectives.tex}
+\input{src2/RETO6.tex}
+
+\subsubsection*{Objetivos específicos / Specific objectives}
+%
+
+\input{src2/ObjCoord.tex}
+\input{src2/ObjEng.tex}
+\input{src2/ObjectivesCalrec.tex}
+\input{src2/ObjBata.tex}
+
+\subsubsection*{Metodolog\'ia / Methodology}
+
+%4. El detalle de la metodologia propuesta en cada uno de los subproyectos participantes
+\input{src2/Methodology.tex}
+\input{src2/MethodologyCoord.tex} 
+\input{src2/MethodologyEng.tex} 
+\input{src2/MethodologyCalrec.tex} 
+\input{src2/MethodologyBata.tex} 
+
+\subsubsection*{Infraestructuras, equipamientos y propuesta de co-financiaci\'on (equpamientos y fungible) / Infrastructures, equipment and co-funding request (equipment and fungible)}
+
+%5. La descripción de los medios materiales, infraestructuras y equipamientos singulares a disposición de los participantes que permitan abordar la metodología propuesta.
+\input{src2/Equipment.tex}
+\input{src2/BUDGET.tex}
+
+\subsubsection*{Cronograma / Timetable}
+
+\input{src2/NextSchedule.tex}
+\input{src2/BataSchedule.tex}
+
+\subsubsection*{Personal / Personnel}
+
+%7. Si se solicita ayuda para la contratación de personal, justificación de su necesidad y descripción de las tareas que vaya a desarrollar.
+\input{src2/Personnel.tex}
+
+\vspace{12pt}
+
+\noindent\textbf{C.3. IMPACTO ESPERADO DE LOS RESULTADOS / EXPECTED IMPACT}
+
+\input{src2/Impact.tex}
+%C.3. IMPACTO ESPERADO DE LOS RESULTADOS 
+%El contenido de este apartado se solicitará para cada uno de los subproyectos en la aplicación informática de solicitud (con un máximo de 3500 caracteres) y su contenido podrá ser publicado a efectos de difusión si el proyecto resultara financiado en esta convocatoria.
+%En este apartado deberá detallar los siguientes aspectos para el proyecto coordinado en su conjunto.
+%
+%Se recomienda incluir:
+%
+%1. Descripción del impacto científico-técnico social y/o económico que se espera de los resultados del proyecto coordinado, tanto a nivel nacional como internacional.
+%
+%2. El plan de difusión e internacionalización en su caso de los resultados del proyecto coordinado.
+%
+%3. Si se considera que puede haber transferencia de resultados, se deberán identificar los resultados potencialmente transferibles y detallar el plan previsto para la transferencia de los mismos.
+
+\vspace{12pt}
+
+\noindent\textbf{C.4. CAPACIDAD FORMATIVA DEL EQUIPO / TRAINING CAPABILITIES OF THE GROUP}
+\input{src2/Training.tex}
+
+%Este apartado solo se rellenará si alguno de los subproyectos participantes solicita la inclusión del proyecto en la convocatoria de “Contratos predoctorales para la formación de doctores”. Dicha inclusión solo será posible en un número limitado de los proyectos aprobados.
+%
+%Para evaluar la capacidad formativa del equipo solicitante, se recomienda incluir:
+%
+%1. El plan de formación previsto.
+%
+%2. Relación de tesis realizadas o en curso (últimos 10 años) con indicación del subproyecto, nombre del doctorando, el título de tesis y la fecha de obtención del grado de doctor o de la fecha prevista de lectura de tesis.
+%
+%3. Breve descripción del desarrollo científico o profesional de los doctores egresados de los equipos de investigación de los subproyectos participantes.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{12pt}
+
+\noindent\textbf{C.5. IMPLICACIONES ÉTICAS Y/O DE BIOSEGURIDAD/ETHICS AND SAFETY IMPLICATIONS}
+
+None
+
+\noindent\textbf{APPENDIX: DETAILED COSTS OF THE NEXT PROJECT}
+
+\section{\bf Costs of the NEXT project}
+\label{next.costs}
+
+In this appendix we provide a detailed account of the costs of the project, including details about the funding source. The appendix presents the global costs of the project. Notice that the coordinated project distributes the costs associated with NEXT between three sub-projects, COORD, ENG and CALREC. The subproject COOR (which is also the coordinator) includes the bulk of  the costs of detector construction. The costs of front end electronics, data acquisition and slow controls are included in ENG, and the costs of calibration in CALREC. 
+
+The costs associated with the R\&D for Barium Tagging, a sub-project (BATA) led by the CLPU are described in the main part of the project. 
+
+\input{tbs/NEW.tex}
+\input{tbs/NEXT100.tex}
+\input{tbs/INFRA.tex}
+
+\subsection{Costs of computing, calibration and slow controls}
+Computing is estimated in 69,521 \euro\ that will be covered by the AdG grant. The costs of the slow control (18,271 \euro) and the calibration (60,700 \euro, cost dominated by the need to purchase special radioactive sources for calibration) are assigned to FIS2014. 
+
+\subsection{Total costs equipment, NEXT construction}
+The total costs in equipment of NEXT construction are summarised in table  \ref{tab.TotalE}. They totalise about 4.6 million \euro\ including the xenon gas (1.1 million \euro). The {\bf external} contributions to the project (e.g, the money that does not come from the spanish science system)
+add to 1,286,475 \euro\ ,  a figure slightly higher than the co-funding of 1,279,737  \euro\ 
+requested in this project. 
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+Cost	& Total &	CUP &	AdG	& USA &	LSC &	FIS2014 \\
+ \hline
+& {\bf 4,626,074} &	798,583 & 	897,218 & 	413,457&	1,306,600 & 1,279,738 \\	
+ \hline\hline
+\end{tabular}  
+\caption{Total costs of the NEXT construction (equipment).}
+\label{tab.TotalE}
+\end{center}
+\end{table} 
+
+\input{tbs/Personnel.tex}
+\input{tbs/travel.tex}
+
+%\subsection{Costs of construction, personnel and travel to LSC}
+%\begin{table}[h!]
+%\begin{center}
+%\begin{tabular}{|l|c|c|c|c|}
+%\hline
+%Subproject &	Construction &	Personnel  &	Travel& Total\\
+%\hline
+%COORD (IFIC)	& 859,091 &	600,000 &	181,000 &	1,640,091 \\
+%ENG (UPV)	& 420,646 &	190,000	& 40,000	& 610,646 \\
+%CALREC (US)	& 0	& 160,000	 & 40,000	& 200,000 \\
+% \hline\hline
+%\end{tabular}  
+%\caption{Costs of NEXT construction, personnel and travel to LSC.}
+%\label{tab.CostsTotal}
+%\end{center}
+%\end{table} 
+%
+%The total costs of construction, personnel and travel to the LSC amounts to 
+%{\bf 2,450,737 \euro}. The costs are distributed in three subprojects, called COORD (coordination, IFIC), 
+%ENG (engineering, UPV) and CALREC (calibration and reconstruction, US). The distribution of costs per subproject is detailed in table \ref{tab.CostsTotal}. Notice that the construction funds requested
+%by IFIC are matched by those provided by the AdG, and the construction funds requested by the 
+%UPV are matched by those provided by the USA groups. All the personnel funds are matched by 
+%funds provided by the AdG. The personnel from the co-ordinated project at the LSC will be matched
+%by personnel from the international collaboration. 
+
+%\subsection{Common fund}
+%
+%The operation and maintenance costs of NEXT will be covered by contributions of all the groups to a common fund (CF). The CF is being implemented in 2015 and will be firm from 2016 onwards. The CF is implemented by charging an annual quota (2,500 \euro) per Ph.D in the group. Table \ref{tab.CFD} gives the distribution of PH.Ds in the collaboration (as of September 2014) and their contribution to the CF. The total is 100 k\euro\ per year, which is the right order of magnitude to cover for common expenses (including supplies, cleaning material, maintenance of subsystems, nitrogen and argon gas, and replacements of expensive supplies such as gaskets) and to afford modest improvements to the systems. 
+%
+%\begin{table}[h!]
+%\begin{center}
+%\begin{tabular}{|l|c|c|c|}
+%\hline
+%Group &	number of Ph.D & 	Contribution \\
+%\hline
+%IFIC &	10	& 25,000 \\
+%UPV	& 3 &	7,500 \\
+%US	& 2	& 5,000 \\
+%UAM	  & 2 & 	5,000 \\
+%UNIZAR	& 6	& 15,000 \\
+%Portugal 	& 6	& 15,000 \\
+%Russia	& 3	& 7,500 \\
+%Colombia	& 3	& 7,500 \\
+%USA	& 5 & 	12,500 \\
+%\hline
+%Total & 40& 100,000 \\
+% \hline\hline
+%\end{tabular}  
+%\caption{Contributions to NEXT common fund.}
+%\label{tab.CFD}
+%\end{center}
+%\end{table} 
+%
+%In this project we require funds to contribute to the NEXT CF, corresponding to 3 years (2016, 2017 and 2018). The contributions to 2015 can be covered with remaining funds from CUP. The contribution is
+%37,500 \euro\ per year, thus a total of 112,500 \euro. 
+%
+\end{document}
+%
